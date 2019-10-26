@@ -19,7 +19,7 @@
                     <img src="../images/logo_oclock.png" alt="logo_nomdusite" />
                     <h1>O'clock <span>Board</span></h1>
                 </div>
-                <h2>Mémos, tricks, shortcuts etc.</h2>
+                <h2>Mémos, links, shortcuts etc.</h2>
             </div>
 
             <!--Menu de navigation-->

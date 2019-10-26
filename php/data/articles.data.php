@@ -2,7 +2,7 @@
 
 $memos = [
             1 => [
-                "h3" => "<h3> Mémo <span>#1</span> Souviens-toi bien !!</h3>",
+                "h3" => "<h3>Mémo <span>#1</span> Souviens-toi...</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -14,24 +14,27 @@ $memos = [
                                     <li>
                                         <span>R</span>ead <span>T</span>he <span>F</span>ucking <span>M</span>anual !
                                     </li>
+                                    <li>
+                                    <span>N</span>ever <span>T</span>hrust <span>U</span>ser <span>I</span>nput
+                                    </li>
                                 </ul>
                             </p>"
             ],
             2 => [
-                "h3" => "<h3> Mémo <span>#2</span> La p'tite manip GIT qui va bien</h3>",
+                "h3" => "<h3>Mémo <span>#2</span> La p'tite manip GIT qui va bien</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
                                         Ouvre ton terminal (Alt + Ctrl + T)
                                     </li>
                                     <li>
-                                        Vérifie que tu sois es le bon répertoire (pwd ou ls)
+                                        Vérifie que tu es le bon répertoire (pwd ou ls)
                                     </li>
                                     <li>
                                         git status
                                     </li>
                                     <li>
-                                        git add .
+                                        git add  .
                                     </li>
                                     <li>
                                         git commit -m \"ton message\"
@@ -43,11 +46,19 @@ $memos = [
                             </p>"
             ],
             3 => [
-                "h3" => "<h3>Mémo <span>#3</span> Changer la couleur des commentaires dans VSCODE</h3>",
+                "h3" => "<h3>Mémo <span>#3</span> Personnalise VSCODE</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
                                         Va dans les paramètres de ton VSCODE (CTRL + ,)
+                                    </li>
+                                    <li>
+                                        Workbench / Appearance / Color Theme
+                                    </li>
+                                    <li>
+                                        Choisis ton thème
+                                    </li>
+                                        Et si tu veux changer la couleur de la docstring...
                                     </li>
                                     <li>
                                         Tape : 'tokenColorCustomizations' dans 'search settings'
@@ -57,16 +68,17 @@ $memos = [
                                     </li>
                                     <li>
                                         Tape : 'editor.tokenColorCustomizations': {
-                                        'comments': '#fff'
+                                        'comments': '#fff}, (ou la couleur de ton choix)'
                                     </li>
                                     <li>
-                                        Remplace #fff par la couleur de ton choix
+                                        Fais bien gaffe à placer une virgule 
+                                        à la fin du paramètre précédent
                                     </li>
                                 </ul>
                             </p>",
                 ],
-            3 => [
-                "h3" => "<h3>Mémo <span>#3</span></h3>",
+            4 => [
+                "h3" => "<h3>Mémo <span>#4</span></h3>",
                 "texte" => "blabla"
             ]
 ];
