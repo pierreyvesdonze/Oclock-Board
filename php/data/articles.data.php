@@ -25,7 +25,7 @@ $memos = [
                                         Ouvre ton terminal (Alt + Ctrl + T)
                                     </li>
                                     <li>
-                                        Vérifie que tu sois dans le bon répertoire (pwd ou ls)
+                                        Vérifie que tu sois es le bon répertoire (pwd ou ls)
                                     </li>
                                     <li>
                                         git status
@@ -73,7 +73,7 @@ $memos = [
 
 $shortCuts = [
             1 => [
-                "h4" => "<h4>Raccourcis <span>VSCODE</span>",
+                "h4" => "<h4>Raccourcis <span>VSCODE</span></h4>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
