@@ -1,0 +1,122 @@
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background: url(../images/background_accueil.png) 0% 0% / cover no-repeat fixed;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#bloc_page {
+    width: 800px;
+    margin: auto;
+}
+
+/*H E A D E R*/
+#titre_principal {
+    display: flex;
+    width: ;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h1, header #logo {
+    text-shadow: black 4px 1px 2px;
+}
+
+header h2 {
+    font-size: 0.8em;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+
+#menuBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    box-shadow: black 5px 5px 3px 0px;
+    font-size: 1em;
+    text-shadow: black 2px 2px 2px;
+    padding: 1em;
+    border-radius: 20px;
+    background: url(../images/banniere.png) 0% 0% / cover no-repeat;
+}
+
+#menuBoard ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    padding: 0px;
+}
+
+#menuBoard li {
+    width: calc(100% / 3);
+    text-align: center;
+    padding-bottom: 0.5em;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+article {
+    box-shadow: black 5px 2px 3px 0px;
+    text-shadow: black 1px 1px 2px;
+    overflow-y: scroll;
+    max-height: 350px;
+    background: url(../images/background_section.png) 0% 0% / cover no-repeat;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+article span {
+    color: rgb(0, 196, 168);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
