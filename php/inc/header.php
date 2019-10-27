@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link href=<link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Poiret+One&display=swap" rel="stylesheet">
     <title>Tableau de bord O'clock</title>
 
