@@ -10,7 +10,6 @@
 </head>
 
 <body>
- 
     <!--Conteneur principal + header-->
     <div id="bloc_page">
         <header>

@@ -391,10 +391,12 @@ require 'board.php';
         </tr>
         <tr>
             <td>28/12/2019</td>
+            <td></td>
             <td>-- vacances de Noël --</td>
         </tr>
         <tr>
             <td>29/12/2019</td>
+            <td></td>
             <td>-- vacances de Noël --</td>
         </tr>
         <tr>
@@ -424,19 +426,21 @@ require 'board.php';
         </tr>
         <tr>
             <td>04/01/2020</td>
-            <td>S07 - Fullstack</td>
+           
         </tr>
         <tr>
             <td>05/01/2020</td>
-            <td>S07 - Fullstack</td>
+            
         </tr>
         <tr>
             <td>06/01/2020</td>
             <td>lundi</td>
+            <td>S07 - Fullstack</td>
         </tr>
         <tr>
             <td>07/01/2020</td>
             <td>mardi</td>
+            <td>S07 - Fullstack</td>
         </tr>
         <tr>
             <td>08/01/2020</td>
