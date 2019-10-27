@@ -137,8 +137,11 @@ $memos = [
                                     </li>
                                 </ul>
                             </p>"
-            ]
-];
+            ],
+            
+];          
+        
+
 
 $shortCuts = [
             1 => [
@@ -186,6 +189,9 @@ $shortCuts = [
                                     </li>
                                     <li>
                                         <span>Début/fin du document : </span>Ctrl + début / fin
+                                    </li>
+                                    <li>
+                                        <span>Générer une entête HTML : </span>touche '!' puis 'Entrée'
                                     </li>
                                 </ul>
                             </p>"

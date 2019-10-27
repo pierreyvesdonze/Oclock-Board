@@ -1,8 +1,5 @@
-<?php 
-?>
-
 <section id=menuBoard>
-    <div id="left">
+    <div id="leftBoard">
         <ul>
             <li><a href="https://cockpit.oclock.io/" target="blank"><img src="../images/ico_cockpit.png" alt="icone cockpit"> Cockpit</a></li>
 
@@ -18,19 +15,23 @@
         </ul>
     </div>
 
+    <!---------------------------------------------------------------->
+    <div id="centerBoard">
+        <form action="<?php getNameVpn(); ?>" method="POST" id="formVpn">
+            <label for="" id="labelBoard">V P N</label>
+            <input type="text" name="goVpn" placeholder="nom-prenom" id="inputVpn">
+        </form>
+    </div>
+    <!---------------------------------------------------------------->
+
 
 
     <!---------------------------------------------------------------->
-    <div id="right">
-
-        <!--Test en dur pour l'instant
-        <h5>TEST</h5>-->
+    <div id="rightBoard">
         <?php  
             getUrl();
         ?>
-
-
-
-
     </div>
+    <!---------------------------------------------------------------->
 </section>
+

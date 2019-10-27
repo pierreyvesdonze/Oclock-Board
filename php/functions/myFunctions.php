@@ -9,6 +9,9 @@ function showArticle($memos) {
     }
 };
 
+
+
+
 /*Affiche les raccourcis dans la section article*/
 function showShortcuts($shortcuts) {
     foreach ($shortcuts as $key => $value) {
@@ -18,7 +21,10 @@ function showShortcuts($shortcuts) {
 };
 
 
-/*Affiche la catégorie sélectionnée*/
+
+
+
+/*Affiche la l'intitulé de la page courante*/
 function getUrl() {
 
     if ($_SERVER['REQUEST_URI'] == "/O'clock/Projets/Oclock_Board/php/index.php") {
@@ -31,4 +37,18 @@ function getUrl() {
             
         }
         echo $urlServer;
+};
+
+
+
+
+/*Récupère nom & prénom dans le formulaire et retourne l'URL personnalisée du VPN O'clock*/
+
+function getNameVpn() {
+
+    if (isset($_POST['goVpn']) && !empty($_POST['goVpn'])) {
+        $name = $_POST['goVpn'] . '.vpnuser.lan';
+        header("Location: http://" . $name);
+    }
+    
 }

@@ -89,34 +89,6 @@ nav a:hover {
 
 
 
-/*B O A R D*/
-#menuBoard {
-    display: flex;
-    margin-bottom: 25px;
-    box-shadow: black 5px 5px 10px 5px;
-    text-shadow: black 2px 2px 2px;
-    padding: 0.8em 0 0.8em 2em;
-    border-radius: 20px;
-    background: url(../images/banniere.png) 0% 0% / cover no-repeat;
-}
-
-#menuBoard ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0px;
-}
-
-#menuBoard li {
-    width: calc(70% / 2);
-    padding-bottom: 0.5em;
-    list-style: none;
-    padding: 0 0 8px 0;
-}
-
-
-
-
 /*L I N K S*/
 a {
     color: white;
@@ -130,16 +102,111 @@ a {
 
 
 
-/*L E F T */
-#left {
-    width: 50%;
+
+/*B O A R D*/
+#menuBoard {
+    display: flex;
+
+    margin-bottom: 25px;
+    box-shadow:  black 5px 5px 10px 5px;
+    text-shadow: black 2px 2px 2px;
+    padding: 0.8em 0 0.8em 2em;
+    border-radius: 20px;
+    background: url(../images/banniere.png) 0% 0% / cover no-repeat;
 }
 
 
 
 
+/*L E F T */
+#leftBoard {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background: url(../images/board_left.png);
+    border-radius: 20px;
+    -moz-box-shadow:    inset 5px 5px 10px #000000;
+    -webkit-box-shadow: inset 5px 5px 10px #000000;
+    box-shadow:         inset 5px 5px 10px #000000;
+}
+
+#leftBoard ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+#leftBoard li {
+    width: calc(70% / 2);
+    padding-bottom: 0.5em;
+    list-style: none;
+    padding: 0 0 8px 0;
+}
+
+#leftBoard img, #leftBoard li {
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+
+
+
+/*C E N T E R*/
+#centerBoard {
+    margin: auto;
+    width: auto;
+}
+
+#formVpn {
+    width: 120px;
+    text-align: center;
+}
+
+#labelBoard {
+    color: #00c4a8;
+    font-size: 0.7em;
+}
+
+#inputVpn {
+    width: 120px;
+    margin-top: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: solid 1px rgba(255, 255, 255, 0.788);
+    border-radius: 20px;
+    -webkit-filter: blur(2px);
+    filter: blur(1px);
+    opacity: .7;
+    -webkit-transition: .2s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#inputVpn:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; 
+}
+
+#inputVpn:focus {
+    outline: none;
+    background-color: #00c4a8;
+}
+
+::placeholder{
+    text-align: center;
+    text-shadow: #000000 4px 3px 6px;
+    color: rgb(255, 255, 255);
+}
+ 
+
+
+
+
 /*R I G H T*/
-#right {
+#rightBoard {
     display: flex;
     justify-content: center;
     background: url(../images/board_right.png);
@@ -152,7 +219,7 @@ a {
     box-shadow:         inset 5px 5px 10px #000000;
 }
 
-#right h5 {
+#rightBoard h5 {
     margin: 0;
     font-size: 2em;
     color: #00c4a8;
