@@ -28,7 +28,7 @@ $memos = [
                                         Ouvre ton terminal (Alt + Ctrl + T)
                                     </li>
                                     <li>
-                                        Vérifie que tu es le bon répertoire (pwd ou ls)
+                                        Vérifie que tu es sur le bon répertoire (pwd ou ls)
                                     </li>
                                     <li>
                                         git status
@@ -58,6 +58,7 @@ $memos = [
                                     <li>
                                         Choisis ton thème
                                     </li>
+                                    <li>
                                         Et si tu veux changer la couleur de la docstring...
                                     </li>
                                     <li>
@@ -79,7 +80,7 @@ $memos = [
                 ],
             4 => [
                 "h3" => "<h3>Mémo <span>#4</span></h3>",
-                "texte" => "blabla"
+                "texte" => "[...]"
             ]
 ];
 
@@ -110,7 +111,7 @@ $shortCuts = [
                                         <span>Formater : </span>Alt + Ctrl + i / Alt + Ctrl + F
                                     </li>
                                     <li>
-                                        <span>Curseur multilignes : </span>Alt + Ctrl + flèche haut / bas
+                                        <span>Curseur multilignes : </span>Alt + Ctrl + flèche haut / bas ou Alt + click
                                     </li>
                                     <li>
                                         <span>Ouvrir un fichier : </span>Ctrl + O

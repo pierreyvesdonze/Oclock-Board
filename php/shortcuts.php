@@ -10,5 +10,4 @@ require 'board.php';
         showShortcuts($shortCuts);
         ?>
     </article>
-
 </main>

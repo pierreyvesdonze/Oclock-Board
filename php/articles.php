@@ -11,4 +11,3 @@ require 'board.php';
     </article>
 
 </main>
-

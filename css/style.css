@@ -1,3 +1,4 @@
+/*B O D Y*/
 body {
     font-family: Poppins, sans-serif;
     color: white;
@@ -10,6 +11,9 @@ body {
     width: 800px;
     margin: auto;
 }
+
+
+
 
 /*H E A D E R*/
 #titre_principal {
@@ -54,6 +58,9 @@ header h2 {
     width: 20%;
 }
 
+
+
+
 /*N A V */
 nav {
     display: flex;
@@ -78,6 +85,9 @@ nav li {
 nav a:hover {
     color: #00c4a8;
 }
+
+
+
 
 /*B O A R D*/
 #menuBoard {
@@ -104,6 +114,10 @@ nav a:hover {
     padding: 0 0 8px 0;
 }
 
+
+
+
+/*L I N K S*/
 a {
     color: white;
     text-decoration: none;
@@ -112,6 +126,42 @@ a {
 #menuBoard a:hover {
     color: #00c4a8;
 }
+
+
+
+
+/*L E F T */
+#left {
+    width: 50%;
+}
+
+
+
+
+/*R I G H T*/
+#right {
+    display: flex;
+    justify-content: center;
+    background: url(../images/board_right.png);
+    width: 20%;
+    margin: auto;
+    margin-right: 50px;
+    border-radius: 20px;
+    -moz-box-shadow:    inset 5px 5px 10px #000000;
+    -webkit-box-shadow: inset 5px 5px 10px #000000;
+    box-shadow:         inset 5px 5px 10px #000000;
+}
+
+h5 {
+    margin: 0;
+    font-size: 2em;
+    color: #00c4a8;
+    text-shadow: #082926 2px 3px 6px;
+    font-family: 'Poiret One', cursive;
+}
+
+
+
 
 /*A R T I C L E*/
 article {
@@ -132,6 +182,10 @@ article h3, article h4 {
     margin: 0;
 }
 
+article h4 {
+    border-bottom: 1px solid white;
+}
+
 article span {
     color: rgb(0, 196, 168);
 }
@@ -150,6 +204,9 @@ article li {
     font-size: 1em;
     padding-bottom: 0.5em;
 }
+
+
+
 
 /*S C R O L L B A R */
 ::-webkit-scrollbar 
@@ -178,6 +235,9 @@ article li {
     border-radius: 10px;
 }
 
+
+
+
 /*R E S P O N S I V E*/
 @media all and (max-width: 1024px)
 {
@@ -185,46 +245,38 @@ article li {
         height: auto;
     }
 
-    #bloc_page
-    {
+    #bloc_page {
         width: auto;
         margin: 5%;
         height: 100%;
     }
 
-    nav
-    {
+    nav {
         width: auto;
         text-align: left;
     }
 
-    nav ul
-    {
+    nav ul {
         flex-direction: column;
     }
 
-    nav li
-    {
+    nav li {
         padding-left: 4px;
     }
 
-    nav a
-    {
+    nav a {
         font-size: 1.1em;
     }
 
-    nav a:hover
-    {
+    nav a:hover {
         border-bottom: 0;
     }
 
-    section
-    {
+    section {
         flex-direction: column;
     }
 
-    article
-    {
+    article {
         width: auto;
         margin-bottom: 15px;
         padding-bottom: 600px;
