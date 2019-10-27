@@ -253,6 +253,10 @@ article span {
     color: rgb(0, 196, 168);
 }
 
+article a:hover {
+    color: rgb(0, 196, 168);
+}
+
 article h3 span, article h4 span  {
     padding-left: 6px;
     padding-right: 6px;
@@ -268,6 +272,32 @@ article li {
     padding-bottom: 0.5em;
 }
 
+
+
+
+/*P L A N N I N G*/
+#planning table {
+    margin: auto;
+}
+
+#planning table th{
+    color: #00c4a8;
+    font-size: 2em;
+    padding: 0 1.5em 1.2em 0;
+}
+
+#planning table td {
+    padding-bottom: 0.5em;
+}
+
+#planning table tr td:first-child,
+#planning table tr td:nth-of-type(3){
+    color: #00c4a8;
+}
+
+#planning table td:nth-of-type(2) {
+    text-align: center;
+}
 
 
 

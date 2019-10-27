@@ -138,6 +138,19 @@ $memos = [
                                 </ul>
                             </p>"
             ],
+
+            7 => [
+                "h3" => "<h3>Mémo <span>#7</span> Un petit générateur de tableau HTML bien pratique</h3>",
+                "texte" => "<p>
+                                <ul>
+                                    <li>
+                                        <span><a href='https://www.tablesgenerator.com/html_tables' target = 'blank'>tablesgenerator</a> 
+                                        </span>
+                                    </li>
+                                </ul>
+                            </p>"
+            ],
+
             
 ];          
         
