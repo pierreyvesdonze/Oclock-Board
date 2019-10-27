@@ -143,7 +143,7 @@ a {
     display: flex;
     justify-content: center;
     background: url(../images/board_right.png);
-    width: 20%;
+    width: 180px;
     margin: auto;
     margin-right: 50px;
     border-radius: 20px;
@@ -152,7 +152,7 @@ a {
     box-shadow:         inset 5px 5px 10px #000000;
 }
 
-h5 {
+#right h5 {
     margin: 0;
     font-size: 2em;
     color: #00c4a8;
@@ -180,10 +180,6 @@ article h3, article h4 {
     font-weight: bold;
     text-align: left;
     margin: 0;
-}
-
-article h4 {
-    border-bottom: 1px solid white;
 }
 
 article span {

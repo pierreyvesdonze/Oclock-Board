@@ -76,11 +76,67 @@ $memos = [
                                         à la fin du paramètre précédent
                                     </li>
                                 </ul>
-                            </p>",
+                            </p>"
                 ],
             4 => [
-                "h3" => "<h3>Mémo <span>#4</span></h3>",
-                "texte" => "[...]"
+                "h3" => "<h3>Mémo <span>#4</span> La fausse manip GIT qui fait mal...</h3>",
+                "texte" => "<p>
+                                <ul>
+                                    <li>
+                                        Si tu clones un dépôt depuis GIT portant le même nom de dossier que ton dépôt local sans avoir pris soin de commit/push au préalable, ton dépôt local et tout ce qu'il contient seront anéantis, comme toi.
+                                    </li>
+                                </ul>
+                            </p>"
+            ],
+
+            5 => [
+                "h3" => "<h3>Mémo <span>#5</span> Obtenir un terminal Linux sous Windows (BASH)</h3>",
+                "texte" => "<p>
+                                <ul>
+                                    <li>
+                                        Sous Windows 10, 'Bash', un shell Linux est installé par défaut. Pour l'activer :
+                                    </li>
+                                    <li>
+                                        Va dans tes 'Paramètres Windows' / Mise à jour et sécurité
+                                    </li>
+                                    <li>
+                                        Active le mode développeur
+                                    </li>
+                                    <li>
+                                        Va dans panneau de config / Programmes
+                                    </li>
+                                    <li>
+                                        Clique sur 'Activer ou désactiver des fonctionnalités de Windows'
+                                    </li>
+                                    <li>
+                                        Coche 'Sous-système Windows pour Linux'
+                                    </li>
+                                    <li>
+                                        Redémarre
+                                    </li>
+                                    <li>
+                                        Ou sinon, télécharge GIT c'est aussi bien !! :D
+                                    </li>
+                                </ul>
+                            </p>"
+            ],
+
+            6 => [
+                "h3" => "<h3>Mémo <span>#6</span> Utiliser BASH depuis VSCODE</h3>",
+                "texte" => "<p>
+                                <ul>
+                                    <li>
+                                        Dans VSCCODE => Ctrl + Shift + P
+                                    </li>
+                                    <li>
+                                        Sélectionne Git Bash dans les options
+                                    </li>
+                                    <li>
+                                        Ouvre un terminal, Bash s'ouvre direct 
+                                        sur ton répertoire de travail courant. Classe non ? 
+                                    </li>
+                                </ul>
+                            </p>"
             ]
 ];
 
@@ -130,6 +186,19 @@ $shortCuts = [
                                     </li>
                                     <li>
                                         <span>Début/fin du document : </span>Ctrl + début / fin
-                                    </li>"
-            ]
-            ];
+                                    </li>
+                                </ul>
+                            </p>"
+            ],
+
+            2 => [
+                "h4" => "<h4>Raccourcis <span>Téléporteur</span></h4>",
+                "texte" => "<p>
+                                <ul>
+                                    <li>
+                                        <span>Accéder au menu avec le clavier : </span>Ctrl + touche 'Début' (Ctrl de droite)
+                                    </li>
+                                </ul>
+                            </p>"
+                ]
+];

@@ -23,10 +23,10 @@
     <!---------------------------------------------------------------->
     <div id="right">
 
-        <!--Test en dur pour l'instant-->
-        <h5>TEST</h5>
+        <!--Test en dur pour l'instant
+        <h5>TEST</h5>-->
         <?php  
-          /*  showH5();*/
+            getUrl();
         ?>
 
 

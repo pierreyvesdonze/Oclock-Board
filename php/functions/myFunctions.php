@@ -19,16 +19,16 @@ function showShortcuts($shortcuts) {
 
 
 /*Affiche la catégorie sélectionnée*/
-/*function showH5() {
+function getUrl() {
 
-    echo $_SERVER['REQUEST_URI'];
-    if ($_SERVER['REQUEST_URI'] = "/O'clock/Projets/Oclock_Board/php/index.php") {
-        $h5 = '<h5>ASTUCES</h5>';
-        echo $h5;
-    };
-    
+    if ($_SERVER['REQUEST_URI'] == "/O'clock/Projets/Oclock_Board/php/index.php") {
+        $urlServer = '<h5>ASTUCES</h5>';
+        
+    } 
     if
-        ($_SERVER['REQUEST_URI'] = "/O'clock/Projets/Oclock_Board/php/shortcuts.php") {
-            $h5 = '<h5>SHORTCUTS<h5>';
+        ($_SERVER['REQUEST_URI'] == "/O'clock/Projets/Oclock_Board/php/shortcuts.php") {
+            $urlServer= '<h5>SHORTCUTS<h5>';
+            
         }
-}*/
+        echo $urlServer;
+}
