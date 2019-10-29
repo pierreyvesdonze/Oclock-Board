@@ -2,7 +2,7 @@
 require 'data/articles.data.php';
 require 'functions/myFunctions.php';
 require 'inc/header.php';
-require 'board.php';
+require 'inc/board.php';
 ?>
 
 <article id="planning">

@@ -64,7 +64,7 @@ header h2 {
 /*N A V */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -78,7 +78,7 @@ nav ul {
 }
 
 nav li {
-    padding-left: 2em;
+    padding-left: 1em;
     font-size: 1.2em;
 }
 
@@ -232,6 +232,8 @@ a {
 
 /*A R T I C L E*/
 article {
+    display: flex;
+    flex-direction: column;
     box-shadow: black 5px 5px 10px 5px;
     text-shadow: black 1px 1px 2px;
     overflow-y: scroll;
@@ -373,4 +375,5 @@ article li {
         width: auto;
         margin-bottom: 15px;
         padding-bottom: 600px;
+    }
 }
