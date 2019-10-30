@@ -5,6 +5,6 @@ require 'inc/board.php';
 ?>
 
     <article>
-        <?php showShortcuts($shortCuts); ?>
+        <?php showMemo($memosPhp); ?>
     </article>
 </main>

@@ -1,8 +1,8 @@
 <?php
 
-$memos = [
+$astuces = [
             1 => [
-                "h3" => "<h3>Mémo <span>#1</span> Souviens-toi...</h3>",
+                "h3" => "<h3>Astuce <span>#1</span> Souviens-toi...</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -21,7 +21,7 @@ $memos = [
                             </p>"
             ],
             2 => [
-                "h3" => "<h3>Mémo <span>#2</span> La p'tite manip GIT qui va bien</h3>",
+                "h3" => "<h3>Astuce <span>#2</span> La p'tite manip GIT qui va bien</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -46,7 +46,7 @@ $memos = [
                             </p>"
             ],
             3 => [
-                "h3" => "<h3>Mémo <span>#3</span> Personnalise VSCODE</h3>",
+                "h3" => "<h3>Astuce <span>#3</span> Personnalise VSCODE</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -79,7 +79,7 @@ $memos = [
                             </p>"
                 ],
             4 => [
-                "h3" => "<h3>Mémo <span>#4</span> La fausse manip GIT qui fait mal...</h3>",
+                "h3" => "<h3>Astuce <span>#4</span> La fausse manip GIT qui fait mal...</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -90,7 +90,7 @@ $memos = [
             ],
 
             5 => [
-                "h3" => "<h3>Mémo <span>#5</span> Obtenir un terminal Linux sous Windows (BASH)</h3>",
+                "h3" => "<h3>Astuce <span>#5</span> Obtenir un terminal Linux sous Windows (BASH)</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -122,7 +122,7 @@ $memos = [
             ],
 
             6 => [
-                "h3" => "<h3>Mémo <span>#6</span> Utiliser BASH depuis VSCODE</h3>",
+                "h3" => "<h3>Astuce <span>#6</span> Utiliser BASH depuis VSCODE</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -140,7 +140,7 @@ $memos = [
             ],
 
             7 => [
-                "h3" => "<h3>Mémo <span>#7</span> Un petit générateur de tableau HTML bien pratique</h3>",
+                "h3" => "<h3>Astuce <span>#7</span> Un petit générateur de tableau HTML bien pratique</h3>",
                 "texte" => "<p>
                                 <ul>
                                     <li>
@@ -150,7 +150,6 @@ $memos = [
                                 </ul>
                             </p>"
             ],
-
             
 ];          
         
@@ -220,4 +219,18 @@ $shortCuts = [
                                 </ul>
                             </p>"
                 ]
+];
+
+$memosPhp = [ 
+
+                1 => [
+                    "h4" => "<h3><span>#1</span> Ajouter un élément dans un array</h4>",
+                    "texte" => "<p>
+                    
+                        \$array = []; <br>
+                        ....\$array[] = 'elt'; <br>
+                    
+                                </p>"
+                ],
+    
 ];

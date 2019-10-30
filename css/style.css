@@ -71,10 +71,17 @@ nav a {
     text-shadow: black 2px 2px 2px;
 }
 
+nav a:hover {
+    color: #00c4a8;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
-    padding: 0;
+    position:relative;
+	float:left;
+	margin:0;
+	padding:0
 }
 
 nav li {
@@ -82,9 +89,36 @@ nav li {
     font-size: 1.2em;
 }
 
-nav a:hover {
-    color: #00c4a8;
+nav ul a {
+	display:block;
+	text-decoration:none;
+	font-weight:700;
+	font-size:0.8em;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
 }
+
+nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+nav ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0
+}
+
+
+nav ul li:hover ul {
+	display:block
+}
+
 
 
 
@@ -123,6 +157,7 @@ a {
     display: flex;
     justify-content: space-between;
     width: 40%;
+    
     background: url(../images/board_left.png);
     border-radius: 20px;
     -moz-box-shadow:    inset 5px 5px 10px #000000;

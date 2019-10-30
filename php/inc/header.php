@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/test.css"/>
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Poiret+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/faviconoclock.png" />
     <title>O'clock Dashboard</title>
@@ -25,9 +26,20 @@
             <!--Menu de navigation-->
             <nav>
                 <ul>
-                    <li><a href="index.php">Astuces</a></li>
-                    <li><a href="shortcuts.php">Shortcuts</a></li>
+                    <li>
+                        <a href="#">Mémos</a>
+                        <ul>
+                            <li>
+                                 <a href="articles.php?id=astuces">Astuces</a> <!--ATTENTION URL-->
+                            </li>
+                            <li>
+                               <a href="memosPhp.php?id=memosPhp">PHP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="shortcuts.php?id=shortcuts">Shortcuts</a></li>
                     <li><a href="planning.php">Planning</a></li>
+                    
                     <!--<li><a href="#">Contact</a></li>-->
                 </ul>
             </nav>
