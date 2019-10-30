@@ -1,14 +1,21 @@
 <?php
 require 'data/articles.data.php';
 
-
+function getArticle($dataArticles) {
+    if (isset($_GET['id']) && $_GET['id'] = ('memosPhp')) {
+            foreach ($dataArticles[0] as $key => $value) {
+                echo $value['titre'];
+                echo $value['texte']; 
+            }       
+    }
+}
 
 
 /*Affiche les astuces dans la section article*/
 function showArticle($astuces)
 {
     foreach ($astuces as $key => $value) {
-        echo $value['h3'];
+        echo $value['titre'];
         echo $value['texte'];
     }
 };
@@ -18,7 +25,7 @@ function showArticle($astuces)
 function showShortcuts($shortcuts)
 {
     foreach ($shortcuts as $key => $value) {
-        echo $value['h4'];
+        echo $value['titre'];
         echo $value['texte'];
     }
 };
@@ -28,7 +35,7 @@ function showShortcuts($shortcuts)
 function showMemo($memosPhp)
 {
     foreach ($memosPhp as $key => $value) {
-        echo $value['h4'];
+        echo $value['titre'];
         echo $value['texte'];
     }
 };
@@ -40,6 +47,9 @@ function showMemo($memosPhp)
 function getUrl()
 {
 
+    if ($_SERVER['REQUEST_URI'] == "/O'clock/Projets/Oclock_Board/php/index.php") {
+        $urlServer = '<h5>HOME</h5>';
+    }
     if ($_SERVER['REQUEST_URI'] == "/O'clock/Projets/Oclock_Board/php/articles.php?id=astuces") {
         $urlServer = '<h5>ASTUCES</h5>';
     }

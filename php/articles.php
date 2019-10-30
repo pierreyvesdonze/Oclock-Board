@@ -8,7 +8,7 @@ require 'inc/board.php';
 
     <article>
         <?php
-            showArticle($astuces);
+            getArticle($dataArticles);
         ?>
     </article>
 
