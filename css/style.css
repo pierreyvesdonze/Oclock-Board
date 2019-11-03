@@ -1,6 +1,6 @@
 /*B O D Y*/
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     background: url(../images/background_accueil.png) 0% 0% / cover no-repeat fixed;
     margin: 0px;
@@ -13,6 +13,30 @@ body {
 }
 
 
+
+/*C U S T O M    S E L E C T*/
+
+.customSelect {
+    padding: 0.2em 1.2em 0 0;
+    height: 20px;
+}
+
+.customSelect button {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px black;
+}
+
+.customSelect button:focus {
+    outline: none;
+    background-color: #00c4a8;
+}
+
+.customSelect button:hover {
+    background-color: #00c4a8;
+}
 
 
 /*H E A D E R*/
@@ -35,7 +59,7 @@ h1 {
 }
 
 h1 span {
-    color: rgb(0, 196, 168);
+    color: #00c4a8;
 }
 
 header h2 {
@@ -140,7 +164,6 @@ a {
 /*B O A R D*/
 #menuBoard {
     display: flex;
-
     margin-bottom: 25px;
     box-shadow:  black 5px 5px 10px 5px;
     text-shadow: black 2px 2px 2px;
@@ -246,8 +269,7 @@ a {
     justify-content: center;
     background: url(../images/board_right.png);
     width: 180px;
-    margin: auto;
-    margin-right: 50px;
+    margin: auto 5px auto 10px;
     border-radius: 20px;
     -moz-box-shadow:    inset 5px 5px 10px #000000;
     -webkit-box-shadow: inset 5px 5px 10px #000000;
@@ -284,6 +306,7 @@ article h3, article h4 {
     font-weight: bold;
     text-align: left;
     margin: 0;
+    padding-top: 20px;
 }
 
 article span {
@@ -307,6 +330,10 @@ article ul {
 article li {
     font-size: 1em;
     padding-bottom: 0.5em;
+}
+
+article p {
+    padding-bottom: 1em;
 }
 
 

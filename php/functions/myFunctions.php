@@ -27,7 +27,7 @@ function getArticle($dataArticles) {
 
 
 
-//////////////////////////////////////////////////// GetUrl
+//////////////////////////////////////////////////// GETURL
 /*Affiche l'intitulé de la page courante*/
 function getUrl() {
     if (isset($_GET['id']) && $_GET['id'] == 'index') {
@@ -39,7 +39,7 @@ function getUrl() {
     } else if (isset($_GET['id']) && $_GET['id'] == 'planning') {
         $urlServer = '<h5>PLANNING</h5>';
     } else if (isset($_GET['id']) && $_GET['id'] == 'memosPhp') {
-        $urlServer = '<h5>P H P</h5>';
+        $urlServer = '<h5>PHP</h5>';
     }
     echo $urlServer;
 };
@@ -47,7 +47,7 @@ function getUrl() {
 
 
 
-//////////////////////////////////////////////////// getNameVpn
+//////////////////////////////////////////////////// GETNAMEVPN
 /*Récupère nom & prénom dans le formulaire et retourne l'URL personnalisée du VPN O'clock*/
 function getNameVpn()
 {

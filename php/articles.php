@@ -6,10 +6,14 @@ require 'inc/board.php';
 
    
 
-    <article>
-        <?php
-            getArticle($dataArticles);
-        ?>
-    </article>
+        <article>
+            <?php
+                getArticle($dataArticles);
+            ?>
+        </article>
+    </main>
 
-</main>
+    <script src="../js/functions.js"></script>
+
+</body>
+</html>

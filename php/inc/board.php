@@ -22,7 +22,7 @@
             <input type="text" name="goVpn" placeholder="nom-prenom" id="inputVpn">
         </form>
     </div>
-    <!---------------------------------------------------------------->
+
 
 
 
@@ -32,6 +32,10 @@
             getUrl();
         ?>
     </div>
-    <!---------------------------------------------------------------->
+    <div class = "customSelect">
+        <button onClick="swapStylesheet('../css/style.css')"></button>
+        <button onClick="swapStylesheet('../css/style_2.css')"></button>
+    </div>    
+ 
 </section>
 

@@ -235,6 +235,17 @@ $dataArticles =
                         
                                     </p>"
                     ],
+
+                    2 => [
+                        "titre" => "<h3><span>#2</span> Récupérer des paramètres via l'url</h4>",
+                        "texte" => "<p>
+                        
+                            \$_GET['id'] = 'name'; <br>
+                            <br>
+                            <span>Url : 'xxx.php?id='name'</span>
+                        
+                                    </p>"
+                    ]
         
                 ],
 ];

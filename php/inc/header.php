@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/test.css"/>
+    <link id = "cssFile" rel="stylesheet" href="../css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Poiret+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/faviconoclock.png" />
     <title>O'clock Dashboard</title>
@@ -18,9 +17,9 @@
             <div id="titre_principal">
                 <div id="logo">
                     <img src="../images/logo_oclock.png" alt="logo_nomdusite" />
-                    <h1>O'clock <span>Board</span></h1>
+                    <h1>O'clock <span>Dashboard</span></h1>
                 </div>
-                <a href="index.php"><h2>Le tableau de bord O'clock</h2></a>
+                <a href="index.php?id=index"><h2>Le tableau de bord O'clock</h2></a>
             </div>
 
             <!--Menu de navigation-->
