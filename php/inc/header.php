@@ -20,7 +20,7 @@
                     <img src="../images/logo_oclock.png" alt="logo_nomdusite" />
                     <h1>O'clock <span>Board</span></h1>
                 </div>
-                <h2>Le tableau de bord O'clock</h2>
+                <a href="index.php"><h2>Le tableau de bord O'clock</h2></a>
             </div>
 
             <!--Menu de navigation-->
@@ -33,12 +33,12 @@
                                  <a href="articles.php?id=astuces">Astuces</a> <!--ATTENTION URL-->
                             </li>
                             <li>
-                               <a href="memosPhp.php?id=memosPhp">PHP</a>
+                               <a href="articles.php?id=memosPhp">PHP</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="shortcuts.php?id=shortcuts">Shortcuts</a></li>
-                    <li><a href="planning.php">Planning</a></li>
+                    <li><a href="articles.php?id=shortcuts">Shortcuts</a></li>
+                    <li><a href="planning.php?id=planning">Planning</a></li>
                     
                     <!--<li><a href="#">Contact</a></li>-->
                 </ul>
