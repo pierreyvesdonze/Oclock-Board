@@ -1,5 +1,5 @@
-//////////////////////////////////////////////////// RotateStyle
-// Fonctions permettant de changer le css
+//////////////////////////////////////////////////// SWAPCSS
+// Fonctions permettant de modifier le css
 var app = {
 
     init: function () {

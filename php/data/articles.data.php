@@ -28,10 +28,10 @@ $dataArticles =
                     "texte" => "<p>
                                     <ul>
                                         <li>
-                                            Ouvre ton terminal (Alt + Ctrl + T)
+                                            Ouvrir un terminal (Alt + Ctrl + T)
                                         </li>
                                         <li>
-                                            Vérifie que tu es sur le bon répertoire (pwd ou ls)
+                                            Vérifier que l'on est sur le bon répertoire (pwd ou ls)
                                         </li>
                                         <li>
                                             git status
@@ -40,7 +40,7 @@ $dataArticles =
                                             git add  .
                                         </li>
                                         <li>
-                                            git commit -m \"ton message\"
+                                            git commit -m \"Un message (explicite)\"
                                         </li>
                                         <li>
                                             git push
@@ -49,11 +49,11 @@ $dataArticles =
                                 </p>"
                 ],
                 3 => [
-                    "titre" => "<h3>Astuce <span>#3</span> Personnalise VSCODE</h3>",
+                    "titre" => "<h3>Astuce <span>#3</span> Personnaliser VSCODE</h3>",
                     "texte" => "<p>
                                     <ul>
                                         <li>
-                                            Va dans les paramètres de ton VSCODE (CTRL + ,)
+                                            Aller dans les paramètres de VSCODE (CTRL + ,)
                                         </li>
                                         <li>
                                             Workbench / Appearance / Color Theme
@@ -62,20 +62,20 @@ $dataArticles =
                                             Choisis ton thème
                                         </li>
                                         <li>
-                                            Et si tu veux changer la couleur de la docstring...
+                                            Et pour changer la couleur de la docstring...
                                         </li>
                                         <li>
-                                            Tape : 'tokenColorCustomizations' dans 'search settings'
+                                            Taper : 'tokenColorCustomizations' dans 'search settings'
                                         </li>
                                         <li>
-                                            Clique sur 'Edit in settings.json'
+                                            Cliquer sur 'Edit in settings.json'
                                         </li>
                                         <li>
                                             Tape : 'editor.tokenColorCustomizations': {
-                                            'comments': '#fff}, (ou la couleur de ton choix)'
+                                            'comments': '#fff}, (ou la couleur de son choix)'
                                         </li>
                                         <li>
-                                            Fais bien gaffe à placer une virgule 
+                                            Faire attention à placer une virgule 
                                             à la fin du paramètre précédent
                                         </li>
                                     </ul>
@@ -100,25 +100,25 @@ $dataArticles =
                                             Sous Windows 10, 'Bash', un shell Linux est installé par défaut. Pour l'activer :
                                         </li>
                                         <li>
-                                            Va dans tes 'Paramètres Windows' / Mise à jour et sécurité
+                                            Aller dans tes 'Paramètres Windows' / Mise à jour et sécurité
                                         </li>
                                         <li>
-                                            Active le mode développeur
+                                            Activer le mode développeur
                                         </li>
                                         <li>
-                                            Va dans panneau de config / Programmes
+                                            Aller dans panneau de config / Programmes
                                         </li>
                                         <li>
-                                            Clique sur 'Activer ou désactiver des fonctionnalités de Windows'
+                                            Cliquer sur 'Activer ou désactiver des fonctionnalités de Windows'
                                         </li>
                                         <li>
-                                            Coche 'Sous-système Windows pour Linux'
+                                            Cocher 'Sous-système Windows pour Linux'
                                         </li>
                                         <li>
-                                            Redémarre
+                                            Redémarrer...
                                         </li>
                                         <li>
-                                            Ou sinon, télécharge GIT c'est aussi bien !! :D
+                                            ...ou sinon, <a href ='https://git-scm.com/downloads'> télécharger GIT</a> c'est aussi bien !
                                         </li>
                                     </ul>
                                 </p>"
@@ -132,11 +132,11 @@ $dataArticles =
                                             Dans VSCCODE => Ctrl + Shift + P
                                         </li>
                                         <li>
-                                            Sélectionne Git Bash dans les options
+                                            Sélectionner Git Bash dans les options
                                         </li>
                                         <li>
-                                            Ouvre un terminal, Bash s'ouvre direct 
-                                            sur ton répertoire de travail courant. Classe non ? 
+                                            Ouvrir un terminal. Bash s'ouvre directement 
+                                            sur le répertoire de travail courant. 
                                         </li>
                                     </ul>
                                 </p>"
@@ -278,7 +278,7 @@ $dataArticles =
                     ],
 
                     2 => [
-                        "titre" => "<h4><span>#2</span> Créer des fonctions dans un module</h4>",
+                        "titre" => "<h4><span>#2</span> Créer des fonctions anonymes dans un module</h4>",
                         "texte" => "<p>
                         <code><pre>
                             var app = {
@@ -287,7 +287,7 @@ $dataArticles =
                                     app.<span>function2()</span>;
                                 },
 
-                                myFunction = <span>function</span>(parameter) {
+                                myFunction: <span>function</span>(parameter) {
                                     var question = <span>prompt</span>(parameter);
 
                                     <span>return</span> question;

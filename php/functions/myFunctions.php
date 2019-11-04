@@ -4,6 +4,7 @@ require 'data/articles.data.php';
 
 
 //////////////////////////////////////////////////// GETARTICLE
+// Permet d'afficher la page demandée dans le main
 function getArticle($dataArticles) {
     
     if (isset($_GET['id']) && $_GET['id'] == 'astuces') {
@@ -11,6 +12,11 @@ function getArticle($dataArticles) {
             echo $value['titre'];
             echo $value['texte']; 
         }       
+    } elseif (isset($_GET['id']) && $_GET['id'] == 'shortcuts') {
+        foreach ($dataArticles[1] as $key => $value) {
+            echo $value['titre'];
+            echo $value['texte']; 
+        }
     } elseif (isset($_GET['id']) && $_GET['id'] == 'memosPhp') {
         foreach ($dataArticles[2] as $key => $value) {
             echo $value['titre'];
@@ -21,11 +27,6 @@ function getArticle($dataArticles) {
             echo $value['titre'];
             echo $value['texte']; 
         } 
-    } elseif (isset($_GET['id']) && $_GET['id'] == 'shortcuts') {
-        foreach ($dataArticles[1] as $key => $value) {
-            echo $value['titre'];
-            echo $value['texte']; 
-        }
     }
 };
 
@@ -55,10 +56,11 @@ function getUrl() {
 
 
 //////////////////////////////////////////////////// GETNAMEVPN
-/*Récupère nom & prénom dans le formulaire et retourne l'URL personnalisée du VPN O'clock*/
+/*Récupère nom-prénom dans le formulaire et retourne l'URL personnalisée du VPN O'clock*/
+
+//* * * * * Nécessite une regex * * * * *//
 function getNameVpn()
 {
-
     if (isset($_POST['goVpn']) && !empty($_POST['goVpn'])) {
         $name = $_POST['goVpn'] . '.vpnuser.lan';
         header("Location: http://" . $name);

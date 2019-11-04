@@ -123,7 +123,6 @@ nav ul li:hover ul {
 
 
 
-
 /*L I N K S*/
 a {
     color: white;
@@ -133,7 +132,6 @@ a {
 #menuBoard a:hover {
     color: #00c4a8;
 }
-
 
 
 
@@ -329,8 +327,12 @@ article span {
     color: rgb(0, 196, 168);
 }
 
+article a {
+    color: #ff7b00;
+}
+
 article a:hover {
-    color: rgb(0, 196, 168);
+    color: #00c4a8;
 }
 
 article h3 span, article h4 span  {
@@ -427,9 +429,7 @@ article pre p {
     nav {
         width: auto;
         text-align: left;
-    }
-
-   
+    }   
 
     nav li {
         padding-left: 4px;

@@ -15,7 +15,6 @@ body {
 
 
 
-
 /*H E A D E R*/
 #titre_principal {
     display: flex;
@@ -124,7 +123,6 @@ nav ul li:hover ul {
 
 
 
-
 /*L I N K S*/
 a {
     color: white;
@@ -134,7 +132,6 @@ a {
 #menuBoard a:hover {
     color: #ff7b00;
 }
-
 
 
 
@@ -303,7 +300,6 @@ a {
 
 
 
-
 /*A R T I C L E*/
 article {
     display: flex;
@@ -330,6 +326,11 @@ article h3, article h4 {
 article span {
     color: #ff7b00;
 }
+
+article a {
+    color: #00c4a8;
+}
+
 
 article a:hover {
     color: #ff7b00;
