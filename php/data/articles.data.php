@@ -20,6 +20,9 @@ $dataArticles =
                                         <li>
                                         <span>N</span>ever <span>T</span>hrust <span>U</span>ser <span>I</span>nput
                                         </li>
+                                        <li>
+                                        <span>D</span>on't <span>R</span>epeat <span>Y</span>ourself
+                                        </li>
                                     </ul>
                                 </p>"
                 ],
@@ -153,6 +156,17 @@ $dataArticles =
                                     </ul>
                                 </p>"
                 ],
+
+                8 => [
+                    "titre" => "<h3>Astuce <span>#8</span> Raccourci EMMET pour générer une entête HTML</h3>",
+                    "texte" => "<p>
+                                    <ul>
+                                        <li>
+                                            Touche '!' puis 'Entrée'
+                                        </li>
+                                    </ul>
+                                </p>"
+                ],
                 
             ],          
             
@@ -268,7 +282,7 @@ $dataArticles =
                         "texte" => "<p>
                         <code><pre>
                             var newLi</span> = <span>document.createElement</span>('li');
-                            var newLiContent = <span>document.createTexteNode</span>('Un peu de contenu...');
+                            var newLiContent = <span>document.textContent</span>('Un peu de contenu...');
                             newLi.<span>appendChild</span>(newLiContent);
 
                             var truc = <span>document.querySelector</span>('#myDiv');
@@ -284,7 +298,7 @@ $dataArticles =
                             var app = {
                                 init: <span>function</span>() {
                                     app.<span>myFunction</span>(argument);
-                                    app.<span>function2()</span>;
+                                    app.<span>myOverFunction()</span>;
                                 },
 
                                 myFunction: <span>function</span>(parameter) {
