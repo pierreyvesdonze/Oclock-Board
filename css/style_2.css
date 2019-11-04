@@ -14,30 +14,6 @@ body {
 
 
 
-/*C U S T O M    S E L E C T*/
-
-.customSelect {
-    padding: 0.2em 1.2em 0 0;
-    height: 20px;
-}
-
-.customSelect button {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 4px 2px black;
-}
-
-.customSelect button:focus {
-    outline: none;
-    background-color: #ff7b00;
-}
-
-.customSelect button:hover {
-    background-color: #ff7b00;
-}
-
 
 
 /*H E A D E R*/
@@ -81,6 +57,7 @@ header h2 {
 
 #logo img {
     width: 20%;
+    height: 20%;
 }
 
 
@@ -165,6 +142,7 @@ a {
 /*B O A R D*/
 #menuBoard {
     display: flex;
+    flex-direction: inherit;
     margin-bottom: 25px;
     box-shadow:  black 5px 5px 10px 5px;
     text-shadow: black 2px 2px 2px;
@@ -288,6 +266,44 @@ a {
 
 
 
+/*C U S T O M    S E L E C T*/
+
+.customSelect {
+    padding: 0.2em 1.2em 0 0;
+    height: 20px;
+}
+
+.customSelect button {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px black;
+}
+
+#blueStyle:focus {
+    outline: none;
+    background-color: #00c4a8;
+}
+
+#blueStyle:hover {
+    background-color: #00c4a8;
+}
+
+#orangeStyle:focus {
+    outline: none;
+    background-color: #ff7b00;
+}
+
+#orangeStyle:hover {
+    background-color: #ff7b00;
+}
+
+
+
+
+
+
 /*A R T I C L E*/
 article {
     display: flex;
@@ -333,6 +349,12 @@ article li {
     font-size: 1em;
     padding-bottom: 0.5em;
 }
+
+article pre p {
+    font-size: 1.1em;
+    text-align: left;
+}
+
 
 
 

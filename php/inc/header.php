@@ -16,7 +16,7 @@
         <header>
             <div id="titre_principal">
                 <div id="logo">
-                    <img src="../images/logo_oclock.png" alt="logo_nomdusite" />
+                    <img id="logo-img" src="../images/logo_oclock.png"alt="logo_nomdusite" />
                     <h1>O'clock <span>Dashboard</span></h1>
                 </div>
                 <a href="index.php?id=index"><h2>Le tableau de bord O'clock</h2></a>
@@ -33,6 +33,9 @@
                             </li>
                             <li>
                                <a href="articles.php?id=memosPhp">PHP</a>
+                            </li>
+                            <li>
+                               <a href="articles.php?id=memosJs">JS</a>
                             </li>
                         </ul>
                     </li>

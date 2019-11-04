@@ -33,8 +33,8 @@
         ?>
     </div>
     <div class = "customSelect">
-        <button onClick="swapStylesheet('../css/style.css')"></button>
-        <button onClick="swapStylesheet('../css/style_2.css')"></button>
+        <button id="blueStyle"></button>
+        <button id="orangeStyle"></button>
     </div>    
  
 </section>

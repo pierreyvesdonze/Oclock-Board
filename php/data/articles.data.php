@@ -227,25 +227,75 @@ $dataArticles =
     $memosPhp = [ 
 
                     1 => [
-                        "titre" => "<h3><span>#1</span> Ajouter un élément dans un array</h4>",
+                        "titre" => "<h4><span>#1</span> Ajouter un élément dans un array</h4>",
                         "texte" => "<p>
-                        
+                        <code><pre>
                             \$array = []; <br>
-                            ....\$array[] = 'elt'; <br>
+                                \$array[] = 'elt'; <br>
                         
-                                    </p>"
+                        </pre></code></p>"
                     ],
 
                     2 => [
-                        "titre" => "<h3><span>#2</span> Récupérer des paramètres via l'url</h4>",
+                        "titre" => "<h4><span>#2</span> Récupérer des paramètres via l'url</h4>",
                         "texte" => "<p>
-                        
-                            \$_GET['id'] = 'name'; <br>
+                        <code><pre>
+                            \$_GET['id'] = 'name';
                             <br>
                             <span>Url : 'xxx.php?id='name'</span>
-                        
+                        </pre></code>
+                                    </p>"
+                    ],
+
+                    3 => [
+                        "titre" => "<h4><span>#3</span> Parcourir un tableau associatif</h4>",
+                        "texte" => "<p>
+                        <code><pre>
+                            <span>\$data</span> = ['elt' => 3, 'pet' => 'cat', 'float' => 2.1];
+
+                            foreach (<span>\$data</span> as \$key => \$value) {
+                                echo \$value;
+                            }
+                        </pre></code>
                                     </p>"
                     ]
         
                 ],
+
+    $memosJs = [
+                    1 => [
+                        "titre" => "<h4><span>#1</span> Créer et ajouter une liste dans le DOM</h4>",
+                        "texte" => "<p>
+                        <code><pre>
+                            var newLi</span> = <span>document.createElement</span>('li');
+                            var newLiContent = <span>document.createTexteNode</span>('Un peu de contenu...');
+                            newLi.<span>appendChild</span>(newLiContent);
+
+                            var truc = <span>document.querySelector</span>('#myDiv');
+                            truc.<span>appendChild</span>(newLi);
+                        </pre></code>
+                                    </p>"
+                    ],
+
+                    2 => [
+                        "titre" => "<h4><span>#2</span> Créer des fonctions dans un module</h4>",
+                        "texte" => "<p>
+                        <code><pre>
+                            var app = {
+                                init: <span>function</span>() {
+                                    app.<span>myFunction</span>(argument);
+                                    app.<span>function2()</span>;
+                                },
+
+                                myFunction = <span>function</span>(parameter) {
+                                    var question = <span>prompt</span>(parameter);
+
+                                    <span>return</span> question;
+                                },
+                            };
+                        </pre></code>
+                                    </p>"
+                    ]
+
+    ],
 ];

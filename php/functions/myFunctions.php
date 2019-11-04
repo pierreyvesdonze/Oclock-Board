@@ -16,6 +16,11 @@ function getArticle($dataArticles) {
             echo $value['titre'];
             echo $value['texte']; 
         }
+    } elseif (isset($_GET['id']) && $_GET['id'] == 'memosJs') {
+        foreach ($dataArticles[3] as $key => $value) {
+            echo $value['titre'];
+            echo $value['texte']; 
+        } 
     } elseif (isset($_GET['id']) && $_GET['id'] == 'shortcuts') {
         foreach ($dataArticles[1] as $key => $value) {
             echo $value['titre'];
@@ -40,6 +45,8 @@ function getUrl() {
         $urlServer = '<h5>PLANNING</h5>';
     } else if (isset($_GET['id']) && $_GET['id'] == 'memosPhp') {
         $urlServer = '<h5>PHP</h5>';
+    } else if (isset($_GET['id']) && $_GET['id'] == 'memosJs') {
+        $urlServer = '<h5>JS</h5>';
     }
     echo $urlServer;
 };
