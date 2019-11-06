@@ -1,21 +1,28 @@
 //////////////////////////////////////////////////// SWAPCSS
-// Fonctions permettant de modifier le css
+// Fonctions permettant de changer de thème
 var app = {
 
     init: function () {
 
         console.log('app : init');
 
-        var blueButton = document.querySelector('#blueStyle');
+        /*var blueButton = document.querySelector('#blueStyle');
         blueButton.addEventListener('click', app.swapBlueLogo);
         blueButton.addEventListener('click', app.swapBlueButton);
         var orangeButton = document.querySelector('#orangeStyle');
         orangeButton.addEventListener('click', app.swapOrangeLogo);
-        orangeButton.addEventListener('click', app.swapOrangeButton);
+        orangeButton.addEventListener('click', app.swapOrangeButton);*/
 
+        var theme = document.querySelector('#theme-switcher');
+        theme.addEventListener('change', app.handleChangeTheme);
+        
     },
 
-    swapBlueLogo: function () {
+    handleChangeTheme: function(evt){
+        evt.target.form.submit();
+      },
+
+    /*swapBlueLogo: function () {
 
         var cssSheet = '../css/style.css';
         document.getElementById('cssFile').setAttribute('href', cssSheet)
@@ -44,7 +51,7 @@ var app = {
         orange.style.backgroundColor  = '#ff7b00';
         var blue = document.querySelector('#blueStyle');
         blue.style.backgroundColor  = '#000';
-    },
+    },*/
 
 };
 
