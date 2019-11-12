@@ -46,10 +46,13 @@ if (isset($_COOKIE['dashboardTheme'])) {
                             <li>
                                 <a href="articles.php?id=memosJs">JS</a>
                             </li>
+                            <li>
+                                <a href="articles.php?id=shortcuts">Shortcuts</a>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="articles.php?id=shortcuts">Shortcuts</a></li>
                     <li><a href="planning.php?id=planning">Planning</a></li>
+                    <li><a href="contact.php?id=contact">Contact</a></li>
 
                     <!--<li><a href="#">Contact</a></li>-->
                 </ul>

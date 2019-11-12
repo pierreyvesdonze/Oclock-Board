@@ -48,6 +48,8 @@ function getUrl() {
         $urlServer = '<h5>PHP</h5>';
     } else if (isset($_GET['id']) && $_GET['id'] == 'memosJs') {
         $urlServer = '<h5>JS</h5>';
+    } else if (isset($_GET['id']) && $_GET['id'] == 'contact') {
+        $urlServer = '<h5>CONTACT</h5>';
     }
     echo $urlServer;
 };
@@ -58,7 +60,7 @@ function getUrl() {
 //////////////////////////////////////////////////// GETNAMEVPN
 /*Récupère nom-prénom dans le formulaire et retourne l'URL personnalisée du VPN O'clock*/
 
-//* * * * * Nécessite une regex * * * * *//
+//* * * * * Nécessiterait une regex * * * * *//
 function getNameVpn()
 {
     if (isset($_POST['goVpn']) && !empty($_POST['goVpn'])) {
