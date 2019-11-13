@@ -1,13 +1,12 @@
 <?php
 
-$dataArticles = 
-[
+$dataArticles =
+    [
 
-    $astuces = [
-                1 => [
-                    "titre" => "<h3>Astuce <span>#1</span> Souviens-toi...</h3>",
-                    "texte" => "<p>
-                                    <ul>
+        "astuces" => [
+            [
+                "titre" => "Astuce <span>#1</span> Souviens-toi...",
+                "texte" => "<ul>
                                         <li>
                                             <span>K</span>eep <span>I</span>t <span>S</span>imple, <span>S</span>tupid !
                                         </li>
@@ -23,12 +22,11 @@ $dataArticles =
                                         <li>
                                         <span>D</span>on't <span>R</span>epeat <span>Y</span>ourself
                                         </li>
-                                    </ul>
-                                </p>"
-                ],
-                2 => [
-                    "titre" => "<h3>Astuce <span>#2</span> La p'tite manip GIT qui va bien</h3>",
-                    "texte" => "<p>
+                                    </ul>"
+            ],
+            [
+                "titre" => "<h3>Astuce <span>#2</span> La p'tite manip GIT qui va bien</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             Ouvrir un terminal (Alt + Ctrl + T)
@@ -50,10 +48,10 @@ $dataArticles =
                                         </li>
                                     </ul>
                                 </p>"
-                ],
-                3 => [
-                    "titre" => "<h3>Astuce <span>#3</span> Personnaliser VSCODE</h3>",
-                    "texte" => "<p>
+            ],
+            [
+                "titre" => "<h3>Astuce <span>#3</span> Personnaliser VSCODE</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             Aller dans les paramètres de VSCODE (CTRL + ,)
@@ -83,21 +81,21 @@ $dataArticles =
                                         </li>
                                     </ul>
                                 </p>"
-                    ],
-                4 => [
-                    "titre" => "<h3>Astuce <span>#4</span> La fausse manip GIT qui fait mal...</h3>",
-                    "texte" => "<p>
+            ],
+            [
+                "titre" => "<h3>Astuce <span>#4</span> La fausse manip GIT qui fait mal...</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             Si tu clones un dépôt depuis GIT portant le même nom de dossier que ton dépôt local sans avoir pris soin de commit/push au préalable, ton dépôt local et tout ce qu'il contient seront anéantis, comme toi.
                                         </li>
                                     </ul>
                                 </p>"
-                ],
+            ],
 
-                5 => [
-                    "titre" => "<h3>Astuce <span>#5</span> Obtenir un terminal Linux sous Windows (BASH)</h3>",
-                    "texte" => "<p>
+            [
+                "titre" => "<h3>Astuce <span>#5</span> Obtenir un terminal Linux sous Windows (BASH)</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             Sous Windows 10, 'Bash', un shell Linux est installé par défaut. Pour l'activer :
@@ -125,11 +123,11 @@ $dataArticles =
                                         </li>
                                     </ul>
                                 </p>"
-                ],
+            ],
 
-                6 => [
-                    "titre" => "<h3>Astuce <span>#6</span> Utiliser BASH depuis VSCODE</h3>",
-                    "texte" => "<p>
+            [
+                "titre" => "<h3>Astuce <span>#6</span> Utiliser BASH depuis VSCODE</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             Dans VSCCODE => Ctrl + Shift + P
@@ -143,11 +141,11 @@ $dataArticles =
                                         </li>
                                     </ul>
                                 </p>"
-                ],
+            ],
 
-                7 => [
-                    "titre" => "<h3>Astuce <span>#7</span> Un petit générateur de tableau HTML bien pratique</h3>",
-                    "texte" => "<p>
+            [
+                "titre" => "<h3>Astuce <span>#7</span> Un petit générateur de tableau HTML bien pratique</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             <span><a href='https://www.tablesgenerator.com/html_tables' target = 'blank'>tablesgenerator</a> 
@@ -155,27 +153,27 @@ $dataArticles =
                                         </li>
                                     </ul>
                                 </p>"
-                ],
+            ],
 
-                8 => [
-                    "titre" => "<h3>Astuce <span>#8</span> Raccourci EMMET pour générer une entête HTML</h3>",
-                    "texte" => "<p>
+            [
+                "titre" => "<h3>Astuce <span>#8</span> Raccourci EMMET pour générer une entête HTML</h3>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             Touche '!' puis 'Entrée'
                                         </li>
                                     </ul>
                                 </p>"
-                ],
-                
-            ],          
-            
+            ],
+
+        ],
 
 
-    $shortCuts = [
-                1 => [
-                    "titre" => "<h4>Raccourcis <span>VSCODE</span></h4>",
-                    "texte" => "<p>
+
+        "shortCuts" => [
+            [
+                "titre" => "<h4>Raccourcis <span>VSCODE</span></h4>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             <span>Couper/Copier/coller : </span>Ctrl + X / Ctrl + C / Ctrl + V,
@@ -224,46 +222,46 @@ $dataArticles =
                                         </li>
                                     </ul>
                                 </p>"
-                ],
+            ],
 
-                2 => [
-                    "titre" => "<h4>Raccourcis <span>Téléporteur</span></h4>",
-                    "texte" => "<p>
+            [
+                "titre" => "<h4>Raccourcis <span>Téléporteur</span></h4>",
+                "texte" => "<p>
                                     <ul>
                                         <li>
                                             <span>Accéder au menu avec le clavier : </span>Ctrl + touche 'Début' (Ctrl de droite)
                                         </li>
                                     </ul>
                                 </p>"
-                    ]
-                ],
+            ]
+        ],
 
-    $memosPhp = [ 
+        "memosPhp" => [
 
-                    1 => [
-                        "titre" => "<h4><span>#1</span> Ajouter un élément dans un array</h4>",
-                        "texte" => "<p>
+            [
+                "titre" => "<h4><span>#1</span> Ajouter un élément dans un array</h4>",
+                "texte" => "<p>
                         <code><pre>
                             \$array = []; <br>
                                 \$array[] = 'elt'; <br>
                         
                         </pre></code></p>"
-                    ],
+            ],
 
-                    2 => [
-                        "titre" => "<h4><span>#2</span> Récupérer des paramètres via l'url</h4>",
-                        "texte" => "<p>
+            [
+                "titre" => "<h4><span>#2</span> Récupérer des paramètres via l'url</h4>",
+                "texte" => "<p>
                         <code><pre>
                             \$_GET['id'] = 'name';
                             <br>
                             <span>Url : 'xxx.php?id='name'</span>
                         </pre></code>
                                     </p>"
-                    ],
+            ],
 
-                    3 => [
-                        "titre" => "<h4><span>#3</span> Parcourir un tableau associatif</h4>",
-                        "texte" => "<p>
+            [
+                "titre" => "<h4><span>#3</span> Parcourir un tableau associatif</h4>",
+                "texte" => "<p>
                         <code><pre>
                             <span>\$data</span> = ['elt' => 3, 'pet' => 'cat', 'float' => 2.1];
 
@@ -272,14 +270,14 @@ $dataArticles =
                             }
                         </pre></code>
                                     </p>"
-                    ]
-        
-                ],
+            ]
 
-    $memosJs = [
-                    1 => [
-                        "titre" => "<h4><span>#1</span> Créer et ajouter une liste dans le DOM</h4>",
-                        "texte" => "<p>
+        ],
+
+        "memosJs" => [
+            [
+                "titre" => "<h4><span>#1</span> Créer et ajouter une liste dans le DOM</h4>",
+                "texte" => "<p>
                         <code><pre>
                             var newLi</span> = <span>document.createElement</span>('li');
                             var newLiContent = <span>document.textContent</span>('Un peu de contenu...');
@@ -289,11 +287,11 @@ $dataArticles =
                             truc.<span>appendChild</span>(newLi);
                         </pre></code>
                                     </p>"
-                    ],
+            ],
 
-                    2 => [
-                        "titre" => "<h4><span>#2</span> Créer des fonctions anonymes dans un module</h4>",
-                        "texte" => "<p>
+            [
+                "titre" => "<h4><span>#2</span> Créer des fonctions anonymes dans un module</h4>",
+                "texte" => "<p>
                         <code><pre>
                             var app = {
                                 init: <span>function</span>() {
@@ -309,7 +307,7 @@ $dataArticles =
                             };
                         </pre></code>
                                     </p>"
-                    ]
+            ]
 
-    ],
-];
+        ],
+    ];

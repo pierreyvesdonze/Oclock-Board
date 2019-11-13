@@ -1,3 +1,3 @@
 <?php
 
-require 'articles.php';
+header('Location: articles.php');

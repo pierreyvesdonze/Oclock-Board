@@ -1,19 +1,13 @@
 <?php 
-require 'inc/header.php';
-require 'functions/myFunctions.php';
-require 'inc/board.php';
+require 'data/articles.data.php';
+require 'functions/myFunctions.php'; // Mettre getARticle ici dans une variable
+$listArticles = getArticle($dataArticles,$_GET['id']);
 ?>
 
-   
 
-        <article>
-            <?php
-                getArticle($dataArticles);
-            ?>
-        </article>
-    </main>
-
-    <script src="../js/functions.js"></script>
-
-</body>
-</html>
+<?php 
+require 'inc/header.tpl.php';
+require 'inc/board.tpl.php';
+require 'inc/article.tpl.php';
+require 'inc/footer.tpl.php';
+?>

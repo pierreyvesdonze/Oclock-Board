@@ -1,11 +1,10 @@
 <?php
-require 'data/articles.data.php';
-
-
 
 //////////////////////////////////////////////////// GETARTICLE
 // Permet d'afficher la page demandée dans le main
-function getArticle($dataArticles) {
+function getArticle($dataArticles, $categorie) {
+    
+    /*
     
     if (isset($_GET['id']) && $_GET['id'] == 'astuces') {
         foreach ($dataArticles[0] as $key => $value) {
@@ -27,7 +26,9 @@ function getArticle($dataArticles) {
             echo $value['titre'];
             echo $value['texte']; 
         } 
-    }
+    }*/
+
+    return $dataArticles[$categorie];
 };
 
 
@@ -36,6 +37,7 @@ function getArticle($dataArticles) {
 //////////////////////////////////////////////////// GETURL
 /*Affiche l'intitulé de la page courante*/
 function getUrl() {
+
     if (isset($_GET['id']) && $_GET['id'] == 'index') {
         $urlServer = '<h5>HOME</h5>';
     } else if (isset($_GET['id']) && $_GET['id'] == 'astuces') {
@@ -61,10 +63,10 @@ function getUrl() {
 /*Récupère nom-prénom dans le formulaire et retourne l'URL personnalisée du VPN O'clock*/
 
 //* * * * * Nécessiterait une regex * * * * *//
-function getNameVpn()
-{
+function getNameVpn() {
+    
     if (isset($_POST['goVpn']) && !empty($_POST['goVpn'])) {
         $name = $_POST['goVpn'] . '.vpnuser.lan';
         header("Location: http://" . $name);
     }
-}
+};
