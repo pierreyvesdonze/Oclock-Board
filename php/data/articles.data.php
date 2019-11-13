@@ -170,7 +170,7 @@ $dataArticles =
 
 
 
-        "shortCuts" => [
+        "shortcuts" => [
             [
                 "titre" => "<h4>Raccourcis <span>VSCODE</span></h4>",
                 "texte" => "<p>

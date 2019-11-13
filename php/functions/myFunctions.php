@@ -38,6 +38,7 @@ function getArticle($dataArticles, $categorie) {
 /*Affiche l'intitulé de la page courante*/
 function getUrl() {
 
+    $urlServer = "";
     if (isset($_GET['id']) && $_GET['id'] == 'index') {
         $urlServer = '<h5>HOME</h5>';
     } else if (isset($_GET['id']) && $_GET['id'] == 'astuces') {

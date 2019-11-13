@@ -619,12 +619,12 @@ body.dark .input-field {
     background-color:#5bc5b51c;
 }
 
-body.dark .valid{
+body.dark #contact input.valid{
     background-color:#ff7b00;
     
 }
 
-body.dark .invalid {
+body.dark #contact input.invalid {
     background-color: #d80d0d71;
     
 }

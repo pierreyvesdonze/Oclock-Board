@@ -1,10 +1,10 @@
 <?php
-require 'inc/header.php';
 require 'functions/myFunctions.php';
-require 'inc/board.php';
+require 'inc/header.tpl.php';
+require 'inc/board.tpl.php';
 ?>
 
-  
+  <main>
       <form action="" id="contact">
         <input type="text" class="input-field" id="name" placeholder="Nom" autocomplete="off" required>
         <input type="text" class="input-field" id="firstname" placeholder="Prénom" autocomplete="off" required>
@@ -17,8 +17,4 @@ require 'inc/board.php';
       </form>
     </main>
 
-    <script src="../js/functions.js"></script>
-
-</body>
-
-</html>
+<?php require 'inc/footer.tpl.php';?>
