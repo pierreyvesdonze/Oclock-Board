@@ -260,6 +260,7 @@ a {
     color: #00c4a8;
     text-shadow: #082926 2px 3px 6px;
     font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
 }
 
 
@@ -381,6 +382,44 @@ article pre p {
 #planning table td:nth-of-type(2) {
     text-align: center;
 }
+
+
+
+
+
+
+/*C H A L L E N G E S*/
+.challenges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challenges h2 {
+    text-align: center;
+    font-size: 2.1em;
+}
+
+.article-img{
+    padding-bottom: 2em;
+}
+
+.article-img img {
+    transition: .2s ease-in-out;
+    opacity: 0.5;
+    box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+}
+
+.article-img img:hover {
+    opacity: 1;
+}
+
+.article-img img {
+    width: 200px;
+}
+
+
 
 
 

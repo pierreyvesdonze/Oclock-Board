@@ -41,9 +41,7 @@ if (isset($_COOKIE['dashboardTheme'])) {
 
     <!------------------------------BOARD RIGHT---------------------------------->
     <div id="rightBoard">
-        <?php
-        getUrl();
-        ?>
+        <h5><?php getUrl();?></h5>
     </div>
     <div class="customSelect">
         <!--<button id="blueStyle"></button>

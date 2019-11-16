@@ -236,10 +236,10 @@ $dataArticles =
             ]
         ],
 
-        "memosPhp" => [
+        "PHP" => [
 
             [
-                "titre" => "<h4><span>#1</span> Ajouter un élément dans un array</h4>",
+                "titre" => "<span>#1</span> Ajouter un élément dans un array",
                 "texte" => "<p>
                         <code><pre>
                             \$array = []; <br>
@@ -249,7 +249,7 @@ $dataArticles =
             ],
 
             [
-                "titre" => "<h4><span>#2</span> Récupérer des paramètres via l'url</h4>",
+                "titre" => "<span>#2</span> Récupérer des paramètres via l'url",
                 "texte" => "<p>
                         <code><pre>
                             \$_GET['id'] = 'name';
@@ -260,7 +260,7 @@ $dataArticles =
             ],
 
             [
-                "titre" => "<h4><span>#3</span> Parcourir un tableau associatif</h4>",
+                "titre" => "<span>#3</span> Parcourir un tableau associatif",
                 "texte" => "<p>
                         <code><pre>
                             <span>\$data</span> = ['elt' => 3, 'pet' => 'cat', 'float' => 2.1];
@@ -274,9 +274,9 @@ $dataArticles =
 
         ],
 
-        "memosJs" => [
+        "JS" => [
             [
-                "titre" => "<h4><span>#1</span> Créer et ajouter une liste dans le DOM</h4>",
+                "titre" => "<span>#1</span> Créer et ajouter une liste dans le DOM",
                 "texte" => "<p>
                         <code><pre>
                             var newLi</span> = <span>document.createElement</span>('li');
@@ -290,7 +290,7 @@ $dataArticles =
             ],
 
             [
-                "titre" => "<h4><span>#2</span> Créer des fonctions anonymes dans un module</h4>",
+                "titre" => "<span>#2</span> Créer des fonctions anonymes dans un module",
                 "texte" => "<p>
                         <code><pre>
                             var app = {
@@ -310,4 +310,5 @@ $dataArticles =
             ]
 
         ],
+
     ];

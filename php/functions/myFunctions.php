@@ -3,31 +3,6 @@
 //////////////////////////////////////////////////// GETARTICLE
 // Permet d'afficher la page demandée dans le main
 function getArticle($dataArticles, $categorie) {
-    
-    /*
-    
-    if (isset($_GET['id']) && $_GET['id'] == 'astuces') {
-        foreach ($dataArticles[0] as $key => $value) {
-            echo $value['titre'];
-            echo $value['texte']; 
-        }       
-    } elseif (isset($_GET['id']) && $_GET['id'] == 'shortcuts') {
-        foreach ($dataArticles[1] as $key => $value) {
-            echo $value['titre'];
-            echo $value['texte']; 
-        }
-    } elseif (isset($_GET['id']) && $_GET['id'] == 'memosPhp') {
-        foreach ($dataArticles[2] as $key => $value) {
-            echo $value['titre'];
-            echo $value['texte']; 
-        }
-    } elseif (isset($_GET['id']) && $_GET['id'] == 'memosJs') {
-        foreach ($dataArticles[3] as $key => $value) {
-            echo $value['titre'];
-            echo $value['texte']; 
-        } 
-    }*/
-
     return $dataArticles[$categorie];
 };
 
@@ -37,25 +12,12 @@ function getArticle($dataArticles, $categorie) {
 //////////////////////////////////////////////////// GETURL
 /*Affiche l'intitulé de la page courante*/
 function getUrl() {
-
-    $urlServer = "";
-    if (isset($_GET['id']) && $_GET['id'] == 'index') {
-        $urlServer = '<h5>HOME</h5>';
-    } else if (isset($_GET['id']) && $_GET['id'] == 'astuces') {
-        $urlServer = '<h5>ASTUCES</h5>';
-    } else if (isset($_GET['id']) && $_GET['id'] == 'shortcuts') {
-        $urlServer = '<h5>SHORTCUTS</h5>';
-    } else if (isset($_GET['id']) && $_GET['id'] == 'planning') {
-        $urlServer = '<h5>PLANNING</h5>';
-    } else if (isset($_GET['id']) && $_GET['id'] == 'memosPhp') {
-        $urlServer = '<h5>PHP</h5>';
-    } else if (isset($_GET['id']) && $_GET['id'] == 'memosJs') {
-        $urlServer = '<h5>JS</h5>';
-    } else if (isset($_GET['id']) && $_GET['id'] == 'contact') {
-        $urlServer = '<h5>CONTACT</h5>';
+    $urlBoard = "";
+    if (isset($_GET['id'])) {
+        $urlBoard = $_GET['id'];
+        echo $urlBoard;
     }
-    echo $urlServer;
-};
+}
 
 
 

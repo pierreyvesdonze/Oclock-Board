@@ -41,10 +41,10 @@ if (isset($_COOKIE['dashboardTheme'])) {
                                 <!--ATTENTION URL-->
                             </li>
                             <li>
-                                <a href="articles.php?id=memosPhp">PHP</a>
+                                <a href="articles.php?id=PHP">PHP</a>
                             </li>
                             <li>
-                                <a href="articles.php?id=memosJs">JS</a>
+                                <a href="articles.php?id=JS">JS</a>
                             </li>
                             <li>
                                 <a href="articles.php?id=shortcuts">Shortcuts</a>
@@ -52,6 +52,7 @@ if (isset($_COOKIE['dashboardTheme'])) {
                         </ul>
                     </li>
                     <li><a href="planning.php?id=planning">Planning</a></li>
+                    <li><a href="challenges.php?id=challenges">Challenges</a></li>
                     <li><a href="contact.php?id=contact">Contact</a></li>
 
                     <!--<li><a href="#">Contact</a></li>-->
