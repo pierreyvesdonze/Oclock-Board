@@ -27,6 +27,18 @@ require 'inc/board.tpl.php';
                 <img src="../images/cadavre_exquis.png" alt="cadavre exquis">
             </a>
         </div>
+
+        <div class="challenges">
+        <h2>
+            <a href="http://localhost/O'clock/S3/S03-atelier-revision/challenges-s3-php-fonctions-pierreyvesdonze/Chandeleur/php/#up" target="blank">Chandeleur</a>
+        </h2>
+        <div class="article-img">
+            <a href="http://localhost/O'clock/S3/S03-atelier-revision/challenges-s3-php-fonctions-pierreyvesdonze/Chandeleur/php/#up" target="blank">
+                <img src="../images/chandeleur.png" alt="chandeleur">
+            </a>
+        </div>
+
+        
     </div>
 
 </article>
