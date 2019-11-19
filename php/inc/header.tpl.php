@@ -4,12 +4,11 @@ if (isset($_COOKIE['dashboardTheme'])) {
     $currentTheme = $_COOKIE['dashboardTheme'];
 }
 ?>
-
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
     <meta charset="UTF-8" />
-    <link id="cssFile" rel="stylesheet" href="../css/style.css" />
+    <link id="cssFile" rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Poiret+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/faviconoclock.png" />
     <title>O'clock Dashboard</title>
@@ -37,23 +36,23 @@ if (isset($_COOKIE['dashboardTheme'])) {
                         <a href="#">Mémos</a>
                         <ul>
                             <li>
-                                <a href="articles.php?id=astuces">Astuces</a>
+                                <a href="index.php?id=astuces">Astuces</a>
                                 <!--ATTENTION URL-->
                             </li>
                             <li>
-                                <a href="articles.php?id=PHP">PHP</a>
+                                <a href="index.php?id=PHP">PHP</a>
                             </li>
                             <li>
-                                <a href="articles.php?id=JS">JS</a>
+                                <a href="index.php?id=JS">JS</a>
                             </li>
                             <li>
-                                <a href="articles.php?id=shortcuts">Shortcuts</a>
+                                <a href="index.php?id=shortcuts">Shortcuts</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="planning.php?id=planning">Planning</a></li>
-                    <li><a href="challenges.php?id=challenges">Challenges</a></li>
-                    <li><a href="contact.php?id=contact">Contact</a></li>
+                    <li><a href="index.php?id=planning">Planning</a></li>
+                    <li><a href="index.php?id=challenges">Challenges</a></li>
+                    <li><a href="index.php?id=contact">Contact</a></li>
 
                     <!--<li><a href="#">Contact</a></li>-->
                 </ul>

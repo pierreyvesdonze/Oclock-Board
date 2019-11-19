@@ -1,8 +1,5 @@
 <?php
-require 'data/articles.data.php';
-require 'functions/myFunctions.php';
-require 'inc/header.tpl.php';
-require 'inc/board.tpl.php';
+
 ?>
 
 <article id="planning">

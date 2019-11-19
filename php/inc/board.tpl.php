@@ -1,16 +1,9 @@
-<?php
-$currentTheme = 'light';
-if (isset($_COOKIE['dashboardTheme'])) {
-    $currentTheme = $_COOKIE['dashboardTheme'];
-}
-?>
-
 <!------------------------------BOARD 
  LEFT---------------------------------->
 <section id=menuBoard>
     <div id="leftBoard">
         <ul>
-            <li><a href="https://cockpit.oclock.io/" target="blank"><img src="../images/ico_cockpit.png" alt="icone cockpit"> Cockpit</a></li>
+            <li><a href="https://cockpit.oclock.io/" target="blank"><img src="C://wamp64/www/O'Clock/Projets/Oclock_Board/images/ico_cockpit.png" alt="icone cockpit"> Cockpit</a></li>
 
             <li><a href="https://github.com" target="blank"><img src="../images/ico_github.png" alt="icone github"> Github</a></li>
 
@@ -40,12 +33,14 @@ if (isset($_COOKIE['dashboardTheme'])) {
 
 
     <!------------------------------BOARD RIGHT---------------------------------->
+    <!--Affiche la page courante-->
     <div id="rightBoard">
         <h5><?php getUrl();?></h5>
     </div>
+
+
+    <!--THEME SWITCH-->
     <div class="customSelect">
-        <!--<button id="blueStyle"></button>
-         <button id="orangeStyle"></button>-->
         <form action="theme-switcher.php" id="form-theme">
             <select name="theme" id="theme-switcher">
                 <option value="light" <?= ($currentTheme === 'light') ? "selected" : "" ?>>Board</option>
