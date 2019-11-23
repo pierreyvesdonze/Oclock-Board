@@ -1,7 +1,7 @@
 <?php
-require 'functions/myFunctions.php';
-require 'inc/header.tpl.php';
-require 'inc/board.tpl.php';
+require '../functions/myFunctions.php';
+require 'header.tpl.php';
+require 'board.tpl.php';
 ?>
 
   <main>

@@ -2,11 +2,8 @@
 // header('Location: articles.php');
 require 'php/data/articles.data.php';
 require 'php/functions/myFunctions.php'; 
-?>
-
-
-<?php require 'php/inc/header.tpl.php'; ?>
-<?php require 'php/inc/board.tpl.php'; ?>
+require 'php/inc/header.tpl.php';
+require 'php/inc/board.tpl.php'; ?>
 
 
 <?php 

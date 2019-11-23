@@ -3,17 +3,17 @@
 <section id=menuBoard>
     <div id="leftBoard">
         <ul>
-            <li><a href="https://cockpit.oclock.io/" target="blank"><img src="C://wamp64/www/O'Clock/Projets/Oclock_Board/images/ico_cockpit.png" alt="icone cockpit"> Cockpit</a></li>
+            <li><a href="https://cockpit.oclock.io/" target="blank"> Cockpit</a></li>
 
-            <li><a href="https://github.com" target="blank"><img src="../images/ico_github.png" alt="icone github"> Github</a></li>
+            <li><a href="https://github.com" target="blank">Github</a></li>
 
-            <li><a href="https://slack.com/" target="blank"><img src="../images/ico_slack.png" alt="icone Slack"> Slack</a></li>
+            <li><a href="https://slack.com/" target="blank">Slack</a></li>
 
-            <li><a href="https://discordapp.com/channels/316852611867213824/316852611867213824" target="blank"><img src="../images/ico_discord.png" alt="icone discord"> Discord Y</a></li>
+            <li><a href="https://discordapp.com/channels/316852611867213824/316852611867213824" target="blank"> Discord Y</a></li>
 
-            <li><a href="https://codepen.io/mobify/pen/GtqKj" target="blank"><img src="../images/ico_codepen.png" alt="icone codepen"> Codepen</a></li>
+            <li><a href="https://codepen.io/mobify/pen/GtqKj" target="blank">Codepen</a></li>
 
-            <li><a href="http://localhost" target="blank"><img src="../images/ico_localhost.png" alt="icone localhost"> Localhost</a></li>
+            <li><a href="http://localhost" target="blank"> Localhost</a></li>
         </ul>
     </div>
 
