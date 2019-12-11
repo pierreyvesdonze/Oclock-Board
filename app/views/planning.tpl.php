@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <article id="planning">
     <table>
         <tr>

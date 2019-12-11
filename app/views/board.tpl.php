@@ -23,7 +23,14 @@
     <!------------------------------BOARD
      CENTER---------------------------------->
     <div id="centerBoard">
-        <form action="<?php getNameVpn(); ?>" method="POST" id="formVpn">
+        <form action="
+        <?php
+        if (isset($_POST['goVpn']) && !empty($_POST['goVpn'])) {
+            $name = $_POST['goVpn'] . '.vpnuser.lan';
+            header("Location: http://" . $name);
+        };
+        ?>
+        " method="POST" id="formVpn">
             <label for="" id="labelBoard">V P N</label>
             <input type="text" name="goVpn" placeholder="nom-prenom" id="inputVpn">
         </form>
@@ -32,16 +39,22 @@
 
 
 
+
+
     <!------------------------------BOARD RIGHT---------------------------------->
     <!--Affiche la page courante-->
     <div id="rightBoard">
-        <h5><?php getUrl();?></h5>
+        <h5>
+            <?php $url = explode('/',  $_SERVER['REQUEST_URI']);
+            echo ($url[5]);
+            ?>
+        </h5>
     </div>
 
 
     <!--THEME SWITCH-->
     <div class="customSelect">
-        <form action="theme-switcher.php" id="form-theme">
+        <form action="../theme-switcher.php" id="form-theme">
             <select name="theme" id="theme-switcher">
                 <option value="light" <?= ($currentTheme === 'light') ? "selected" : "" ?>>Board</option>
 

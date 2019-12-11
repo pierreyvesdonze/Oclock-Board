@@ -8,7 +8,7 @@ if (isset($_COOKIE['dashboardTheme'])) {
 <html lang='fr'>
 <head>
     <meta charset="UTF-8" />
-    <link id="cssFile" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="<?= $absoluteUrl ?>/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Poiret+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/faviconoclock.png" />
     <title>O'clock Dashboard</title>
@@ -36,22 +36,22 @@ if (isset($_COOKIE['dashboardTheme'])) {
                         <a href="#">Mémos</a>
                         <ul>
                             <li>
-                                <a href="index.php?id=astuces">Astuces</a>
+                                <a href="<?= $absoluteUrl ?>/astuces/">Astuces</a>
                                 <!--ATTENTION URL-->
                             </li>
                             <li>
-                                <a href="index.php?id=PHP">PHP</a>
+                                <a href="<?= $absoluteUrl ?>/php/">PHP</a>
                             </li>
                             <li>
-                                <a href="index.php?id=JS">JS</a>
+                                <a href="<?= $absoluteUrl ?>/js/">JS</a>
                             </li>
                             <li>
-                                <a href="index.php?id=shortcuts">Shortcuts</a>
+                                <a href="<?= $absoluteUrl ?>/shortcuts/">Shortcuts</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="index.php?id=planning">Planning</a></li>
-                    <li><a href="index.php?id=challenges">Challenges</a></li>
+                    <li><a href="<?= $absoluteUrl ?>/planning/">Planning</a></li>
+                    <li><a href="<?= $absoluteUrl ?>/challenges/">Challenges</a></li>
                     <!--<li><a href="php/inc/contact.php">Contact</a></li>-->
                 </ul>
                 
