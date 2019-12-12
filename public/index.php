@@ -88,7 +88,6 @@ $router->map(
     'planning'
 );
 
-
 // Challenge
 $router->map(
     'GET',
@@ -98,6 +97,17 @@ $router->map(
         'controller' => '\Dashboard\Controllers\MainController'
     ],
     'challenges'
+);
+
+// Challenge
+$router->map(
+    'GET',
+    '/contact/',
+    [
+        'action' => 'contactAction',
+        'controller' => '\Dashboard\Controllers\MainController'
+    ],
+    'contact'
 );
 
 // Get method and Controller

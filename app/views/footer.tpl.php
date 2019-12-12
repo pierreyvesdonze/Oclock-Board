@@ -1,4 +1,4 @@
-<script src="../js/functions.js"></script>
+<script src="<?= $absoluteUrl?>/assets/js/functions.js"></script>
 
 </body>
 </html> 

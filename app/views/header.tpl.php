@@ -10,7 +10,7 @@ if (isset($_COOKIE['dashboardTheme'])) {
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="<?= $absoluteUrl ?>/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Poiret+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/faviconoclock.png" />
+    <link rel="icon" type="image/png" href="<?= $absoluteUrl ?>/assets/images/faviconoclock.png" />
     <title>O'clock Dashboard</title>
 
 </head>
@@ -52,6 +52,7 @@ if (isset($_COOKIE['dashboardTheme'])) {
                     </li>
                     <li><a href="<?= $absoluteUrl ?>/planning/">Planning</a></li>
                     <li><a href="<?= $absoluteUrl ?>/challenges/">Challenges</a></li>
+                    <li><a href="<?= $absoluteUrl ?>/contact/">Contact</a></li>
                     <!--<li><a href="php/inc/contact.php">Contact</a></li>-->
                 </ul>
                 

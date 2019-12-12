@@ -54,4 +54,11 @@ class MainController extends CoreController {
         ];
         $this->show('challenge', $viewVars);
     }
+
+    public function contactAction() {
+        $viewVars = [
+            'title' => 'Contact'
+        ];
+        $this->show('contact', $viewVars);
+    }
 }
