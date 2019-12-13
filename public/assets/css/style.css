@@ -2,41 +2,45 @@
 THEME COLORS SETTINGS
 *******************************************************************/
 
-
-
 :root {
-    --primary-color: white;
-    --secondary-color: #00c4a8;
-    --background-image: url(../images/background_accueil.jpg);
-    --background-dashboard: url(../images/banniere.png);
-    --background-left: url(../images/board_left.png);
-    --background-right: url(../images/board_right.png);
-    --background-section: url(../images/ardoise.jpg);
-    --font-color: white;
-    --bg-color: rgb(199, 8, 8);
-    --heading-color: #1ce42d;
-  }
-  
-  [data-theme="dark"] {
     --primary-color: #f0f0f0;
     --secondary-color: #ff7b00;
+    --hover-secondary-color: #ff7b0038;
     --background-image: url(../images/background_section_2.png);
     --background-dashboard: url(../images/background_accueil_2.jpg);
     --background-left: url(../images/background_section_2.png);
     --background-right: url(../images/background_section_2.png);
     --background-section: url(../images/background_accueil_2.png);
+    --background-footer: url(../images/background_accueil_2.png);
     --font-color: #e1e1ff;
-    --bg-color: #0c0000;
-    --heading-color: #818cab;
-  }
+ }
   
+[data-theme="dark"] {
+    --primary-color: white;
+    --secondary-color: #00c4a8;
+    --hover-secondary-color: #00c4a741;
+    --background-image: url(../images/background_accueil.jpg);
+    --background-dashboard: url(../images/banniere.png);
+    --background-left: url(../images/board_left.png);
+    --background-right: url(../images/board_right.png);
+    --background-section: url(../images/ardoise.jpg);
+    --background-footer: url(../images/banniere.png);
+    --font-color: white;
+}
+
+
+/*FXs*/
+
+* {
+    transition: all .2s ease-in-out;
+}
+
+
 
 /*******************************************************************
 BODY
 *******************************************************************/
-* {
-    transition: all .2s ease-in-out;
-}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -48,7 +52,7 @@ body {
 }
 
 #bloc_page {
-    width: 800px;
+    width: 900px;
     margin: auto;
 }
 
@@ -153,6 +157,12 @@ nav ul ul {
 	top:100%;
 	left:0;
 	padding:0
+}
+
+/*nav fx's*/
+nav ul:hover, nav ul:focus {
+    background: var(--hover-secondary-color);
+    border-radius: 20px;
 }
 
 
@@ -430,6 +440,7 @@ article span {
 
 article a {
     color: #ff7b00;
+    margin: 2em 0;
 }
 
 article a:hover {
@@ -488,11 +499,21 @@ article pre p {
 
 
 /*C H A L L E N G E S*/
+.challenge-main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.challenge-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .challenges {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 2em;
 }
 
 .challenges h2 {
@@ -500,24 +521,23 @@ article pre p {
     font-size: 2.1em;
 }
 
-.article-img{
-    padding-bottom: 2em;
-}
 
-.article-img img {
+
+.challenge-img img {
+    margin-bottom: 2em;
     transition: .2s ease-in-out;
-    opacity: 0.5;
+    border-radius: 20px;
+    opacity: 0.3;
     box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
 }
 
-.article-img img:hover {
+.challenge-img img:hover {
     opacity: 1;
 }
 
-.article-img img {
+.challenge-img img {
     width: 200px;
 }
-
 
 
 
@@ -586,15 +606,15 @@ article pre p {
     height: 250px;
 }
 
-#contact input:hover,
+#contact-form input:hover,
 #message:hover,
-#contact-submit:hover {
+#contact-form-submit:hover {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1; 
 }
 
-#contact input:focus, #message:focus {
+#contact-form input:focus, #message:focus {
     outline: none;
     
 }
@@ -631,6 +651,42 @@ margin-bottom: 1em;
 line-height: 1.4;
 }
 
+
+
+/*******************************************************************
+FOOTER
+*******************************************************************/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 120px;
+    margin-top: 25px;
+    box-shadow:  black 5px 5px 10px 5px;
+    background: var(--background-footer) no-repeat center;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+    padding: 0 .7em;
+    text-shadow: black 3px 2px 2px;
+    color: var(--secondary-color);
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.logo img {
+    
+    width: 50px;
+}
 
 
 /*******************************************************************
@@ -671,8 +727,6 @@ R E S P O N S I V E
 
     article {
         width: auto;
-        margin-bottom: 15px;
-        padding-bottom: 600px;
     }
 }
 

@@ -1,6 +1,6 @@
 <main>
     <article>
-    <h4>Raccourcis <span>VSCODE</span></h4>,
+    <h4>Raccourcis <span>VSCODE</span></h4>
 <p>
     <ul>
         <li>

@@ -54,7 +54,10 @@ var app = {
     },
 
     
-
+    /**
+     * 
+     * @param {CONTACT} evt 
+     */
 
     handleSubmitForm: function (evt) {
         evt.preventDefault();
