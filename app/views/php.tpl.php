@@ -6,15 +6,15 @@
 <p>
     <code>
         <pre>
-                            \$array = []; <br>
-                                \$array[] = 'elt'; <br>
+                            $array = []; <br>
+                                $array[] = 'elt'; <br>
                         
                         </pre></code></p>"
 <span>#2</span> Récupérer des paramètres via l'url",
 <p>
     <code>
         <pre>
-                            \$_GET['id'] = 'name';
+                            $_GET['id'] = 'name';
                             <br>
                             <span>Url : 'xxx.php?id='name'</span>
                         </pre></code>
@@ -24,10 +24,10 @@
 <p>
     <code>
         <pre>
-                            <span>\$data</span> = ['elt' => 3, 'pet' => 'cat', 'float' => 2.1];
+                            <span>$data</span> = ['elt' => 3, 'pet' => 'cat', 'float' => 2.1];
 
-                            foreach (<span>\$data</span> as \$key => \$value) {
-                                echo \$value;
+                            foreach (<span>$data</span> as $key => $value) {
+                                echo $value;
                             }
                         </pre></code>
 </p>

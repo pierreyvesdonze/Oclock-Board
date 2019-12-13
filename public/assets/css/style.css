@@ -5,7 +5,7 @@ THEME COLORS SETTINGS
 :root {
     --primary-color: #f0f0f0;
     --secondary-color: #ff7b00;
-    --hover-secondary-color: #ff7b0038;
+    --hover-secondary-color: #ff7b0015;
     --background-image: url(../images/background_section_2.png);
     --background-dashboard: url(../images/background_accueil_2.jpg);
     --background-left: url(../images/background_section_2.png);
@@ -18,7 +18,7 @@ THEME COLORS SETTINGS
 [data-theme="dark"] {
     --primary-color: white;
     --secondary-color: #00c4a8;
-    --hover-secondary-color: #00c4a741;
+    --hover-secondary-color: #00c4a715;
     --background-image: url(../images/background_accueil.jpg);
     --background-dashboard: url(../images/banniere.png);
     --background-left: url(../images/board_left.png);
@@ -99,8 +99,8 @@ header h2 {
 }
 
 #logo-img {
-    width: 20%;
-    height: 20%;
+    width: 15%;
+    height: 15%;
 }
 
 
@@ -500,8 +500,12 @@ article pre p {
 
 /*C H A L L E N G E S*/
 .challenge-main-container {
+    text-align: center;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2em;
 }
 
 .challenge-container {
@@ -671,7 +675,7 @@ footer span {
     display: flex;
     justify-content: center;
     font-family: 'Poiret One', cursive;
-    padding: 0 .7em;
+    padding: 0 .5em;
     text-shadow: black 3px 2px 2px;
     color: var(--secondary-color);
 }
@@ -684,8 +688,7 @@ footer span {
 }
 
 .logo img {
-    
-    width: 50px;
+    width: 40px;
 }
 
 

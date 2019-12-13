@@ -35,6 +35,12 @@ var app = {
             }
         }
 
+        /////////////////// MASK URL SHOWER ON HOVER NAV ///////////////////
+        var hideRightBoardOnHover = document.querySelector('nav');
+        hideRightBoardOnHover.addEventListener('mouseover', app.hideRightBoard);
+
+        var hideRightBoardOnHover = document.querySelector('nav');
+        hideRightBoardOnHover.addEventListener('mouseleave', app.showRightBoard);
     },
 
      /////////////////// THEME SWITCHER ///////////////////
@@ -51,6 +57,16 @@ var app = {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
         }
+    },
+
+         /////////////////// CONTROL URL SHOWER MENU ///////////////////
+
+    hideRightBoard: function () {
+        document.querySelector('#rightBoard').style.display = 'none';
+    },
+
+    showRightBoard: function () {
+        document.querySelector('#rightBoard').style.display = 'block';
     },
 
     
