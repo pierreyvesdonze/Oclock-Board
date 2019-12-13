@@ -23,7 +23,7 @@
     <!------------------------------BOARD
      CENTER---------------------------------->
     <div id="centerBoard">
-        <form action="
+        <!--<form action="
         <?php
         if (isset($_POST['goVpn']) && !empty($_POST['goVpn'])) {
             $name = $_POST['goVpn'] . '.vpnuser.lan';
@@ -33,7 +33,7 @@
         " method="POST" id="formVpn">
             <label for="" id="labelBoard">V P N</label>
             <input type="text" name="goVpn" placeholder="nom-prenom" id="inputVpn">
-        </form>
+        </form>-->
     </div>
 
 
@@ -42,6 +42,7 @@
 
 
     <!------------------------------BOARD RIGHT---------------------------------->
+
     <!--Affiche la page courante-->
     <div id="rightBoard">
         <h5>
@@ -53,15 +54,13 @@
 
 
     <!--THEME SWITCH-->
-    <div class="customSelect">
-        <form action="../theme-switcher.php" id="form-theme">
-            <select name="theme" id="theme-switcher">
-                <option value="light" <?= ($currentTheme === 'light') ? "selected" : "" ?>>Board</option>
-
-                <option value="dark" <?= ($currentTheme === 'dark') ? "selected" : "" ?>>Wood</option>
-            </select>
-        </form>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
     </div>
+
 
 
 </section>

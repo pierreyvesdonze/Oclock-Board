@@ -43,7 +43,7 @@
                     git push
                 </li>
             </ul>
-        </p>"
+        </p>
 
 
         <h3>Astuce <span>#3</span> Personnaliser VSCODE</h3>
@@ -141,7 +141,7 @@
                     </span>
                 </li>
             </ul>
-        </p>"
+        </p>
 
         <h3>Astuce <span>#8</span> Raccourci EMMET pour générer une entête HTML</h3>
         <p>
@@ -150,6 +150,6 @@
                     Touche '!' puis 'Entrée'
                 </li>
             </ul>
-        </p>"
+        </p>
     </article>
 </main>

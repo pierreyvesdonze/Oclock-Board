@@ -4,11 +4,6 @@ var app = {
 
         console.log('app : init');
 
-        var theme = document.querySelector('#theme-switcher');
-        theme.addEventListener('change', app.handleChangeTheme);
-
-
-
         app.fields = document.querySelectorAll('.input-field');
         for (
             var fieldIndex = 0;
@@ -21,15 +16,44 @@ var app = {
 
 
 
-        var form = document.querySelector('#contact');
-        form.addEventListener('submit', app.handleSubmitForm);
+        //var form = document.querySelector('#contact-form');
+        //form.addEventListener('submit', app.handleSubmitForm);
+
+
+         /////////////////// SWITCH THEME SELECTOR ///////////////////
+
+        // Selection du thème puis stockage local du choix de l'utilisateur 
+        app.toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        app.currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+        app.toggleSwitch.addEventListener('change', app.switchTheme, false);
+
+        // Application du thème courant
+        if (app.currentTheme) {
+            document.documentElement.setAttribute('data-theme', app.currentTheme);
+            if (app.currentTheme === 'dark') {
+                app.toggleSwitch.checked = true;
+            }
+        }
 
     },
 
-    // THEME SWITCHER
-    handleChangeTheme: function (evt) {
-        evt.target.form.submit();
+     /////////////////// THEME SWITCHER ///////////////////
+
+     switchTheme: function (evt) {
+
+        console.log('Theme switched');
+
+        if (evt.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
     },
+
+    
 
 
     handleSubmitForm: function (evt) {
