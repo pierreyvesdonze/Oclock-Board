@@ -6,8 +6,8 @@ THEME COLORS SETTINGS
     --primary-color: #f0f0f0;
     --secondary-color: #ff7b00;
     --hover-secondary-color: #ff7b0015;
-    --background-image: url(../images/background_section_2.png);
-    --background-dashboard: url(../images/background_accueil_2.jpg);
+    --background-image: linear-gradient(to right, #4d4540 0%, rgb(0, 0, 0) 100%);
+    --background-dashboard: linear-gradient(120deg, #00000036 0%, #ff730033 100%);
     --background-left: url(../images/background_section_2.png);
     --background-right: url(../images/background_section_2.png);
     --background-section: url(../images/background_accueil_2.png);
@@ -19,8 +19,8 @@ THEME COLORS SETTINGS
     --primary-color: white;
     --secondary-color: #00c4a8;
     --hover-secondary-color: #00c4a715;
-    --background-image: url(../images/background_accueil.jpg);
-    --background-dashboard: url(../images/banniere.png);
+    --background-image: linear-gradient(60deg, #191f25 0%, #353f4b 100%);
+    --background-dashboard:  linear-gradient(to right, #4343437e 0%, rgba(0, 0, 0, 0.719) 100%);;
     --background-left: url(../images/board_left.png);
     --background-right: url(../images/board_right.png);
     --background-section: url(../images/ardoise.jpg);
@@ -32,7 +32,7 @@ THEME COLORS SETTINGS
 /*FXs*/
 
 * {
-    transition: all .2s ease-in-out;
+    transition: all .9s ease-in-out;
 }
 
 
@@ -47,8 +47,8 @@ body {
     color: var(--primary-color);
     margin: 0px;
     overflow: hidden;
-    background: var(--background-image) no-repeat center center fixed;
-    background-size: cover;
+    background-image: var(--background-image);
+    background-attachment: fixed;
 }
 
 #bloc_page {
@@ -199,7 +199,7 @@ DASHBOARD
     text-shadow: black 2px 2px 2px;
     padding: 0.8em 0 0.8em 2em;
     border-radius: 20px;
-    background: var(--background-dashboard) 0% 0% / cover no-repeat;
+    background-image: var(--background-dashboard);
 }
 
 
@@ -210,8 +210,7 @@ DASHBOARD
     display: flex;
     justify-content: space-between;
     width: 40%;
-    
-    background: var(--background-left);
+    background-image: var(--background-image);
     border-radius: 20px;
     -moz-box-shadow:    inset 5px 5px 10px #000000;
     -webkit-box-shadow: inset 5px 5px 10px #000000;
@@ -321,7 +320,7 @@ DASHBOARD
     display: flex;
     width: 50%;
     justify-content: center;
-    background: var(--background-right);
+    background-image: var(--background-image);
     width: 180px;
     margin: auto 5px auto 10px;
     border-radius: 20px;
@@ -431,8 +430,8 @@ article {
     box-shadow: black 5px 5px 10px 5px;
     text-shadow: black 1px 1px 2px;
     overflow-y: scroll;
-    
-    background: var(--background-section) 0% 0% / cover no-repeat fixed;
+    width: 900px;
+    background: var(--background-dashboard);
     border-radius: 20px;
     padding: 2em;
 }
@@ -497,8 +496,10 @@ article pre p {
 }
 
 #planning table tr td:first-child,
-#planning table tr td:nth-of-type(3){
+#planning table tr td:nth-of-type(3),
+#planning th {
     color: var(--secondary-color);
+    
 }
 
 #planning table td:nth-of-type(2) {
@@ -680,7 +681,7 @@ footer {
     height: 120px;
     margin-top: 25px;
     box-shadow:  black 5px 5px 10px 5px;
-    background: var(--background-footer) no-repeat center;
+    background: var(--background-dashboard);
 }
 
 footer span {
