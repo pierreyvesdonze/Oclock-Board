@@ -413,13 +413,25 @@ THEME SWITCHER
 /*******************************************************************
 MAIN
 *******************************************************************/
+main {
+    display: flex;
+    max-height: 40vh;
+    align-items: stretch;
+
+}
+
+
+
+
+
+
 article {
     display: flex;
     flex-direction: column;
     box-shadow: black 5px 5px 10px 5px;
     text-shadow: black 1px 1px 2px;
     overflow-y: scroll;
-    max-height: 300px;
+    
     background: var(--background-section) 0% 0% / cover no-repeat fixed;
     border-radius: 20px;
     padding: 2em;
@@ -681,59 +693,53 @@ footer span {
 }
 
 
-.logo {
+/*L O G O*/
+
+/*.logo {
     display: flex;
     justify-content: center;
   
 }
 
 .logo img {
-    width: 40px;
-}
+    width: 30px;
+}*/
 
 
 /*******************************************************************
 R E S P O N S I V E
 *******************************************************************/
-@media all and (max-width: 1024px)
+@media all and (min-device-width: 800px) and (max-device-width: 1024px)
 {
-    body {
-        height: auto;
+   
+    main {
+        max-height: 40vh;
     }
+}   
 
-    #bloc_page {
-        width: auto;
-        margin: 5%;
-        height: 100%;
+
+@media all and (min-device-width: 680px) and (max-device-width: 800px)
+{
+   
+    main {
+        max-height: 50vh;
     }
+}   
 
-    nav {
-        width: auto;
-        text-align: left;
-    }   
 
-    nav li {
-        padding-left: 4px;
+@media all and (min-device-width: 500px) and (max-device-width: 680px)
+{
+   
+    main {
+        max-height: 60vh;
     }
+}  
 
-    nav a {
-        font-size: 1.1em;
+
+@media all and (min-device-width: 300px) and (max-device-width: 500px)
+{
+   
+    main {
+        max-height: 70vh;
     }
-
-    nav a:hover {
-        border-bottom: 0;
-    }
-
-    section {
-        flex-direction: column;
-    }
-
-    article {
-        width: auto;
-    }
-}
-
-
-
-
-
+}  
