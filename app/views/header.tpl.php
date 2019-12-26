@@ -24,11 +24,10 @@ if (isset($_COOKIE['dashboardTheme'])) {
             <div id="titre_principal">
                 <div id="logo">
                     <!--<img id="logo-img" src="../images/logo_oclock.png" alt="logo_nomdusite" />-->
-                    <h1>O'clock <span>Dashboard</span></h1>
+                    <a href="<?= $absoluteUrl ?>">
+                        <h1>O'clock <span>Dashboard</span></h1>
+                    </a>
                 </div>
-                <a href="<?= $absoluteUrl ?>">
-                    <h2>Le tableau de bord O'clock</h2>
-                </a>
             </div>
 
             <!--Menu de navigation-->

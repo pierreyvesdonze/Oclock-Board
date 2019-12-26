@@ -32,7 +32,7 @@ THEME COLORS SETTINGS
 /*FXs*/
 
 * {
-    transition: all .9s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 
@@ -65,9 +65,10 @@ body {
 }
 
 header {
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
 }
 
 header h1, header #logo {
@@ -185,7 +186,51 @@ a {
 
 
 
+/*******************************************************************
+COLLAPSE
+*******************************************************************/
+input {
+    display: none;
+    visibility: hidden;
+}
 
+#label-collapse{
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#label-collapse:hover {
+    color: #000;
+}
+
+#label-collapse::before {
+    font-family: Consolas, monaco, monospace;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    content: "+";
+    width: 30px;
+    height: 30px;
+    vertical-align: text-top;
+    display: inline-block;
+    border-radius: 50%;
+    background-image: var(--background-dashboard);
+}
+
+#expand {
+height: 0px;
+overflow: hidden;
+transition: height 0.5s;
+}
+
+#toggle:checked ~ #expand {
+height: 160px;
+}
+
+#toggle:checked ~ #label-collapse::before {
+content: "-";
+}
 
 
 /*******************************************************************
@@ -194,7 +239,6 @@ DASHBOARD
 #menuBoard {
     display: flex;
     flex-direction: inherit;
-    margin-bottom: 25px;
     box-shadow:  black 5px 5px 10px 5px;
     text-shadow: black 2px 2px 2px;
     padding: 0.8em 0 0.8em 2em;
@@ -530,15 +574,12 @@ article pre p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
 }
 
 .challenges h2 {
     text-align: center;
     font-size: 2.1em;
 }
-
-
 
 .challenge-img img {
     margin-bottom: 2em;
@@ -710,9 +751,18 @@ footer span {
 /*******************************************************************
 R E S P O N S I V E
 *******************************************************************/
+@media all and (max-device-height: 640px) {
+    footer {
+        display: none;
+    }
+
+    main {
+        min-height: 70vh;
+    }
+}
+
 @media all and (min-device-width: 800px) and (max-device-width: 1024px)
 {
-   
     main {
         max-height: 40vh;
     }
@@ -721,7 +771,6 @@ R E S P O N S I V E
 
 @media all and (min-device-width: 680px) and (max-device-width: 800px)
 {
-   
     main {
         max-height: 50vh;
     }
@@ -730,7 +779,6 @@ R E S P O N S I V E
 
 @media all and (min-device-width: 500px) and (max-device-width: 680px)
 {
-   
     main {
         max-height: 60vh;
     }
@@ -739,7 +787,6 @@ R E S P O N S I V E
 
 @media all and (min-device-width: 300px) and (max-device-width: 500px)
 {
-   
     main {
         max-height: 70vh;
     }

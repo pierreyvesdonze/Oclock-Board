@@ -16,12 +16,7 @@ var app = {
 
 
 
-        //var form = document.querySelector('#contact-form');
-        //form.addEventListener('submit', app.handleSubmitForm);
-
-
-         /////////////////// SWITCH THEME SELECTOR ///////////////////
-
+        /////////////////// SWITCH THEME SELECTOR ///////////////////
         // Selection du thème puis stockage local du choix de l'utilisateur 
         app.toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
         app.currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
@@ -43,9 +38,10 @@ var app = {
         hideRightBoardOnHover.addEventListener('mouseleave', app.showRightBoard);
     },
 
-     /////////////////// THEME SWITCHER ///////////////////
 
-     switchTheme: function (evt) {
+    /////////////////// THEME SWITCHER ///////////////////
+
+    switchTheme: function (evt) {
 
         console.log('Theme switched');
 
@@ -59,7 +55,7 @@ var app = {
         }
     },
 
-         /////////////////// CONTROL URL SHOWER MENU ///////////////////
+    /////////////////// CONTROL URL SHOWER MENU ///////////////////
 
     hideRightBoard: function () {
         document.querySelector('#rightBoard').style.display = 'none';
@@ -69,7 +65,7 @@ var app = {
         document.querySelector('#rightBoard').style.display = 'block';
     },
 
-    
+
     /**
      * 
      * @param {CONTACT} evt 
@@ -106,7 +102,7 @@ var app = {
                 error.textContent = currentField.placeholder + ' doit contenir au moins 3 caractères';
                 errorContainer.appendChild(error);
                 formValid = false;
-            } 
+            }
         }
 
         if (formValid) {
