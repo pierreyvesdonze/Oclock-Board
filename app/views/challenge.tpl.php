@@ -37,6 +37,16 @@
         <h2>Challenges O'Clock</h2>
         <div class="challenge-main-container">
 
+            <!--MyKanban-->
+            <div class="challenge-container">
+                <span>S6 - M Y  K A N B A N</span>
+
+                <div class="challenge-img">
+                    <a href="http://localhost/o'clock/S5/S05-atelier-revisions-pokedex/public/" target="blank">
+                        <img src="<?= $absoluteUrl ?>/assets/images/mykanban.png" alt="pokemons">
+                    </a>
+                </div>
+            </div>
 
             <!--POKEDEX-->
             <div class="challenge-container">
@@ -61,8 +71,8 @@
                 </div>
             </div>
 
-              <!--CADAVRE EXQUIS-->
-              <div class="challenge-container">
+            <!--CADAVRE EXQUIS-->
+            <div class="challenge-container">
                 <span>S3 - CADAVRE EXQUIS</span>
                 (en chantier)
 
